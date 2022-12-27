@@ -1,0 +1,127 @@
+@import "../../sass/helpers";
+@import "https://use.fontawesome.com/releases/v5.8.2/css/all.css";
+header {
+  padding: 20px;
+  background-color: $whiteColor;
+  @include media(sm) {
+    padding: 10px;
+  }
+  .search {
+    border-radius: 10px;
+    position: relative;
+    padding: 7px;
+    border: $b13c;
+    padding-left: 30px;
+    font-size: 14px;
+    @include media(sm) {
+      font-size: 12px;
+    }
+    &::before {
+      font-family: "Font Awesome 5 Free" ;
+      font-weight: 900;
+      content: "\f002";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $greyColor;
+    }
+    input {
+      width: 140px;
+      transition: $mainTransition;
+      border: none;
+      @include media(sm) {
+        width: 75px;
+      }
+      &:focus {
+        width: 180px;
+        @include media(sm) {
+          width: 120px;
+        }
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .icons {
+    .notification {
+      margin-right: 20px;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $redColor;
+        right: -5px;
+        top: -5px;
+        @include media(sm) {
+          width: 8px;
+          height: 8px;
+          right: -3px;
+          top: -3px;
+        }
+      }
+      svg {
+        font-size: 25px;
+        @include media(sm) {
+          font-size: 20px;
+        }
+      }
+    }
+    .tooltip_not {
+      display: none;
+      position: absolute;
+      border: $b13e;
+      border-radius: 8px;
+      background-color: $whiteColor;
+      z-index: 5;
+      right: 70px;
+      top: 25px;
+      width: 250px;
+      &.show {
+        display: block;
+      }
+      @include media(sm) {
+        right: 55px;
+        top: 20px;
+        width: 150px;
+      }
+      span {
+        display: block;
+        cursor: pointer;
+        padding: 20px;
+        transition: $mainTransition;
+        font-size: 17px;
+        @include media(sm) {
+          font-size: 14px;
+          padding: 10px;
+        }
+        &:hover,
+        &.active {
+          background-color: $color3e;
+        }
+        &:not(:last-child) {
+          border-bottom: $b13c;
+        }
+      }
+    }
+    a {
+      transition: $mainTransition;
+      &:hover {
+        opacity: .8;
+      }
+      img {
+        width: 35px;
+        height: 35px;
+        @include media(sm) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

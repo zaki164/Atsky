@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+body {
+  font-family: $fontBase;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding: 20px;
+  @include media(sm) {
+    padding: 10px;
+  }
+}
+h2 {
+  font-weight: bold;
+  font-size: 27px;
+}
+section {
+  padding: 20px;
+  background-color: $whiteColor;
+  border-radius: 8px;
+}
+::placeholder {
+  transition: $mainTransition;
+}
+::selection {
+  background-color: $color3e;
+  color: $orangeColor;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background-color: $whiteColor;
+  // border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $blueColor;
+  // border-radius: 15px;
+  transition: $mainTransition;
+  &:hover {
+    background-color: $blueColorAlt;
+  }
+}
+::-webkit-scrollbar-corner {
+  background-color: $whiteColor;
+}
