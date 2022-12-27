@@ -43,6 +43,9 @@
 }
 .p_custom {
   color: $greyColor;
+  @include media(sm) {
+    font-size: 15px;
+  }
 }
 .hide_mobile {
   @include media(sm) {
@@ -56,6 +59,9 @@
   width: fit-content;
   padding: 4px 10px;
   border-radius: 6px;
+  @include media(sm) {
+    font-size: 15px;
+  }
   &:hover {
     background-color: $blueColorAlt;
     color: $whiteColor;
