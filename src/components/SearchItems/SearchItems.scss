@@ -1,0 +1,26 @@
+@import "../../sass/helpers";
+
+.searchItems {
+  .head {
+    margin: 20px 0;
+    @include media(sm) {
+      margin: 15px 0;
+    }
+  }
+  ul {
+    gap: 20px;
+    @include media(sm) {
+      gap: 15px;
+    }
+    li {
+      font-size: 15px;
+      @include media(sm) {
+        font-size: 13px;
+      }
+      .num {
+        color: $blackColor;
+        background-color: $color3e;
+      }
+    }
+  }
+}

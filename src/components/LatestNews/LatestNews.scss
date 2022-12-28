@@ -1,0 +1,27 @@
+@import "../../sass/helpers";
+
+.LatestNews {
+  .LatestNews_cont {
+    .latestnew {
+      gap: 20px;
+      padding: 20px 0;
+      font-size: 15px;
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      @include media(sm) {
+        font-size: 13px;
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        width: 100px;
+        border-radius: 8px;
+      }
+      .newsdate {
+        color: $blackColor;
+        background-color: $color3e;
+      }
+    }
+  }
+}

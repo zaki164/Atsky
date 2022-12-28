@@ -1,0 +1,27 @@
+@import "../../sass/helpers";
+
+.tasks {
+  ul {
+    margin-top: 20px;
+    gap: 10px;
+    li {
+      padding: 10px 0;
+      .delete {
+        cursor: pointer;
+        transition: $mainTransition;
+        &:hover {
+          color: $redColor;
+        }
+      }
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      &.done {
+        opacity: .3;
+        h4, p {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../sass/helpers";
+
+.QuickDraft {
+  input[type="text"],
+  textarea {
+    border: none;
+    background-color: $color3e;
+    margin-bottom: 20px;
+    @include media(sm) {
+      margin-bottom: 10px;
+    }
+  }
+}

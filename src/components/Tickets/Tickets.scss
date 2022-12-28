@@ -1,0 +1,41 @@
+@import "../../sass/helpers";
+
+.tickets {
+  .tickets_cont {
+    gap: 20px;
+    @include media(sm) {
+      gap: 10px;
+    }
+    .ticket {
+      width: calc(50% - 10px);
+      border: $b13c;
+      padding: 20px;
+      border-radius: 8px;
+      @include media(sm) {
+        width: 100%;
+        padding: 15px;
+      }
+      svg {
+        font-size: 27px;
+        @include media(sm) {
+          font-size: 22px;
+        }
+      }
+      .number {
+        color: $blackColor;
+        font-size: 25px;
+        margin: 5px 0;
+        @include media(sm) {
+          font-size: 18px;
+        }
+      }
+      @each $colorName , $color in $colors {
+        &.#{$colorName} {
+          svg {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+}
