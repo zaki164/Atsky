@@ -1,0 +1,40 @@
+@import "../../sass/helpers";
+
+.LatestUploads{
+  ul {
+    margin-top: 20px;
+    @include media(sm) {
+      margin-top: 10px;
+    }
+    li {
+      gap: 10px;
+      padding: 10px 0;
+      @include media(sm) {
+        gap: 5px;
+      }
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        @include media(sm) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .title {
+        @include media(sm) {
+          font-size: 13px;
+        }
+      }
+      .size {
+        color: $blackColor;
+        background-color: $color3e;
+        @include media(sm) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,10 @@ const SearchItems = () => {
       title: "Logic",
       num: 95
     },
+    {
+      title: "React",
+      num: 88
+    },
   ]
   return (
     <section className='searchItems'>
@@ -38,7 +42,7 @@ const SearchItems = () => {
         {
           SearchData.map((ele, i) => 
           (
-            <li key={i} className="flex_between">
+            <li key={i} className="flex_between fs_15">
               <span>{ele.title}</span>
               <span className='d-block custom_btn num'>{ele.num}</span>
             </li>

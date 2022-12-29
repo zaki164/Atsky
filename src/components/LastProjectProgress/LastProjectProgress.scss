@@ -1,0 +1,63 @@
+@import "../../sass/helpers";
+
+.project_progress {
+  ul {
+    margin-top: 20px;
+    gap: 25px;
+    padding-left: 40px;
+    @include media(sm) {
+      margin-top: 15px;
+      gap: 20px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: $blueColor;
+      left: 10px;
+    }
+    li {
+      position: relative;
+      height: 20px;
+      @include media(sm) {
+        font-size: 13px;
+        height: 15px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        left: -38px;
+        background-color: $whiteColor;
+        border: 2px solid $whiteColor;
+        outline: 2px solid $blueColor;
+        z-index: 1;
+        @include media(sm) {
+          width: 15px;
+          height: 15px;
+          left: -36px;
+        }
+      }
+      &.done {
+        &::before {
+          background-color: $blueColor;
+        }
+      }
+      &.current {
+        &::before {
+          animation: changecolor 1s alternate infinite;
+        }
+      }
+    }
+  }
+  img {
+    width: 160px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+  }
+}

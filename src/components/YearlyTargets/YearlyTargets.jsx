@@ -1,6 +1,5 @@
 import { faCode, faDollarSign, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect } from 'react';
 import './YearlyTargets.scss';
 
 const YearlyTargets = () => {
@@ -27,12 +26,6 @@ const YearlyTargets = () => {
       color: "green"
     },
   ]
-  useEffect(() => {
-    const bars = Array.from(document.getElementsByClassName("progBar"));
-    bars.forEach(ele => {
-      ele.style.width = ele.dataset.width;
-    });
-  }, [])
   
   return (
     <section className='YearlyTargets'>
@@ -50,7 +43,7 @@ const YearlyTargets = () => {
                 <p className='p_custom fw-bold mb-0'>{ele.name}</p>
                 <span className='num d-block fw-bold'>{ele.number}</span>
                 <div className="prog">
-                  <div className="progBar" data-width={ele.Per}></div>
+                  <div className="progBar" style={{width: ele.Per}} data-width={ele.Per}></div>
                 </div>
               </div>
             </div>

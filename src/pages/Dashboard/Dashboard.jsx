@@ -1,4 +1,4 @@
-import { LatestNews, QuickDraft, SearchItems, Tasks, Tickets, Welcome, YearlyTargets } from "../../components";
+import { LastProjectProgress, LatestNews, LatestPost, LatestUploads, Projects, QuickDraft, Reminders, SearchItems, SocialMedia, Tasks, Tickets, Welcome, YearlyTargets } from "../../components";
 import "./Dashboard.scss";
 
 const Dashboard = () => {
@@ -13,7 +13,13 @@ const Dashboard = () => {
         <LatestNews />
         <Tasks />
         <SearchItems />
+        <LatestUploads />
+        <LastProjectProgress />
+        <Reminders />
+        <LatestPost />
+        <SocialMedia />
       </div>
+      <Projects />
     </main>
   )
 }

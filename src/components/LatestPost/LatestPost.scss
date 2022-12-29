@@ -1,0 +1,30 @@
+@import "../../sass/helpers";
+
+.LatestPost {
+  .post_author {
+    padding: 20px 0;
+    border-bottom: $b13e;
+    img {
+      width: 48px;
+      height: 48px;
+      margin-right: 20px;
+    }
+  }
+  .post_body {
+    padding: 20px 0;
+    @include media(sm) {
+      font-size: 13px;
+    }
+  }
+  .post_details {
+    border-top: $b13e;
+    padding-top: 20px;
+    color: $greyColor;
+    @include media(sm) {
+      font-size: 13px;
+    }
+    svg {
+      margin-right: 5px;
+    }
+  }
+}

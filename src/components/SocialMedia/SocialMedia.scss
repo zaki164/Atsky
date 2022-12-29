@@ -1,0 +1,61 @@
+@import "../../sass/helpers";
+
+.SocialMedia {
+  ul {
+    margin-top: 20px;
+    gap: 13px;
+    @include media(sm) {
+      margin-top: 15px;
+      gap: 8px;
+    }
+    li {
+      .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        color: $whiteColor;
+        &:hover {
+          transform: rotate(2deg);
+        }
+        @include media(sm) {
+          width: 35px;
+          height: 35px;
+          font-size: 20px;
+        }
+      }
+      .followers {
+        padding: 10px 20px;
+        @include media(sm) {
+          padding: 4px 10px;
+        }
+        span {
+          @include media(sm) {
+            font-size: 13px;
+          }
+        }
+        a {
+          color: $whiteColor;
+          @include media(sm) {
+            font-size: 12px;
+          }
+        }
+      }
+      @each $brand , $color in $social {
+        &.#{$brand} {
+          .icon {
+            background-color: $color;
+          }
+          .followers {
+            background-color: rgba($color, .2);
+            span {
+              color: $color;
+            }
+            a {
+              background-color: $color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

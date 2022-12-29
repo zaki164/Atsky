@@ -1,0 +1,12 @@
+@import '../../sass/helpers';
+
+.prog {
+  width: 100%;
+  height: 7px;
+  border-radius: 6px;
+  background-color: $color3e;
+  .progBar {
+    height: 100%;
+    border-radius: 6px;
+  }
+}

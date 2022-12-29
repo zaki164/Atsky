@@ -1,8 +1,14 @@
-import "./Profile";
+import { ProfileInfo } from "../../components";
+import "./Profile.scss";
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <main>
+      <h1 className="main_heading">Profile</h1>
+      <div className="wrapper d-flex flex-wrap">
+          <ProfileInfo />
+      </div>
+    </main>
   )
 }
 

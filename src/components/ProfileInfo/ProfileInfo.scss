@@ -1,0 +1,37 @@
+@import '../../sass/helpers';
+
+.ProfileInfo {
+  @include media(sm) {
+    flex-direction: column;
+  }
+  .avatar_box { 
+    gap: 15px;
+    padding: 20px;
+    border-right: $b13e;
+    @include media(sm) {
+      border-right: none;
+      gap: 10px;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      @include media(sm) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .level {
+      color: $greyColor;
+      @include media(sm) {
+        font-size: 14px;
+      }
+    }
+    .stars {
+      color: $orangeColor;
+    }
+  }
+  .information {
+
+  }
+}

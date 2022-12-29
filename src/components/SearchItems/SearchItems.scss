@@ -13,10 +13,6 @@
       gap: 15px;
     }
     li {
-      font-size: 15px;
-      @include media(sm) {
-        font-size: 13px;
-      }
       .num {
         color: $blackColor;
         background-color: $color3e;
