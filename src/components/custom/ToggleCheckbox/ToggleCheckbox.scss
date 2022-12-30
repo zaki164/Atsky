@@ -1,0 +1,43 @@
+@import '../../../sass//helpers';
+
+.toggle_label {
+  .toggle_checkbox {
+    display: none;
+    &:checked {
+      + .toggle_switch {
+        background-color: $blueColor;
+        &::before {
+          content: "\f00c";
+          color: $blueColor;
+          left: 50px;
+        }
+      }
+    }
+  }
+  .toggle_switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    transition: $mainTransition;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00d";
+      font-weight: 900;
+      position: absolute;
+      background-color: $whiteColor;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #aaa;
+      transition: $mainTransition;
+    }
+  }
+}

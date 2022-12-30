@@ -14,7 +14,10 @@ import LatestPost from './LatestPost/LatestPost';
 import SocialMedia from './SocialMedia/SocialMedia';
 import Projects from './Projects/Projects';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
-import CustomProgBar from './CustomProgBar/CustomProgBar';
+import CustomProgBar from './custom/CustomProgBar/CustomProgBar';
+import ToggleCheckbox from './custom/ToggleCheckbox/ToggleCheckbox';
+import MySkills from './MySkills/MySkills';
+import LatestActivities from './LatestActivities/LatestActivities';
 
 export {
   Header,
@@ -34,4 +37,7 @@ export {
   Projects,
   ProfileInfo,
   CustomProgBar,
+  ToggleCheckbox,
+  MySkills,
+  LatestActivities,
 };

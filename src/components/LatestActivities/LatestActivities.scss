@@ -1,0 +1,33 @@
+@import '../../sass/helpers';
+
+.LatestActivities {
+  flex: 2;
+  ul {
+    li {
+      padding: 20px 0;
+      gap: 10px;
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      @include media(sm) {
+        flex-direction: column;
+        text-align: center;
+      }
+      img {
+        width: 64px;
+        height: 64px;
+        @include media(sm) {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+    .date {
+      text-align: end;
+      @include media(sm) {
+        text-align: center;
+      }
+      
+    }
+  }
+}

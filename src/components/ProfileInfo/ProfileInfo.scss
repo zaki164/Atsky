@@ -1,12 +1,13 @@
 @import '../../sass/helpers';
 
 .ProfileInfo {
+  padding: 0;
   @include media(sm) {
     flex-direction: column;
   }
   .avatar_box { 
     gap: 15px;
-    padding: 20px;
+    padding: 40px;
     border-right: $b13e;
     @include media(sm) {
       border-right: none;
@@ -32,6 +33,40 @@
     }
   }
   .information {
-
+    .information_box {
+      padding: 20px;
+      transition: $mainTransition;
+      @include media(md) {
+        align-items: center;
+      }
+      &:hover {
+        background-color: #f9f9f9;
+      }
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      .information_box_title {
+        color: $greyColor;
+      }
+      .information_box_details {
+        gap: 10px;
+        @include media(md) {
+          justify-content: center;
+        }
+        @include media(sm) {
+          flex-direction: column;
+        }
+        > div {
+          min-width: 225px;
+          display: flex;
+          @include media(md) {
+            justify-content: center;
+          }
+          span {
+            color: $blackColor;
+          }
+        }
+      }
+    }
   }
 }

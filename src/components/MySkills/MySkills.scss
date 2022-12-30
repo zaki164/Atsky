@@ -1,0 +1,18 @@
+@import '../../sass/helpers';
+
+.MySkills {
+  flex: 1;
+  ul {
+    li {
+      padding: 20px 0;
+      gap: 8px;
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      span {
+        color: $blackColor;
+        background-color: $color3e;
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
-// @import '../../sass/helpers';
+@import '../../sass/helpers';
 
-// .wrapper {
-
-// }
+.wrapper {
+  @include media(md) {
+    flex-direction: column;
+  }
+}
