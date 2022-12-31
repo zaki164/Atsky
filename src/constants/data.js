@@ -378,8 +378,32 @@ const ActivitiesData = [
   },
 ];
 
-const WidgetsData = 
-["Quick Draft", "Yearly Targets", "Tickets Statistics", "Latest News", "Latest Tasks" , "Top Search Items"];
+const WidgetsData = [
+  {
+    name: "Quick Draft",
+    checked: true
+  },
+  {
+    name: "Yearly Targets",
+    checked: true
+  },
+  {
+    name: "Tickets Statistics",
+    checked: true
+  },
+  {
+    name: "Latest News",
+    checked: true
+  },
+  {
+    name: "Latest Tasks",
+    checked: false
+  },
+  {
+    name: "Top Search Items",
+    checked: true
+  }
+];
 
 const data = {
   nav,

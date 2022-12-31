@@ -1,0 +1,10 @@
+@import '../../sass/helpers';
+
+.Widgets {
+  .ComponentOption {
+    margin-bottom: 15px;
+    @include media(sm) {
+      margin-bottom: 12px;
+    }
+  }
+}

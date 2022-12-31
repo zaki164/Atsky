@@ -22,6 +22,8 @@ import SiteControl from './SiteControl/SiteControl';
 import GeneralInfo from './GeneralInfo/GeneralInfo';
 import SecurityInfo from './SecurityInfo/SecurityInfo';
 import SocialInfo from './SocialInfo/SocialInfo';
+import Widgets from './Widgets/Widgets';
+import ComponentOption from './custom/ComponentOption/ComponentOption';
 
 
 export {
@@ -49,4 +51,6 @@ export {
   GeneralInfo,
   SecurityInfo,
   SocialInfo,
+  Widgets,
+  ComponentOption,
 };
