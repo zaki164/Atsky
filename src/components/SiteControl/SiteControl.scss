@@ -1,0 +1,13 @@
+@import '../../sass/_helpers.scss';
+
+.SiteControl {
+  .website_control {
+    margin: 10px 0;
+    @include media(sm) {
+      flex-direction: column;
+    }
+  }
+  textarea {
+    border: $b13c;
+  }
+}

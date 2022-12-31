@@ -18,6 +18,8 @@ import CustomProgBar from './custom/CustomProgBar/CustomProgBar';
 import ToggleCheckbox from './custom/ToggleCheckbox/ToggleCheckbox';
 import MySkills from './MySkills/MySkills';
 import LatestActivities from './LatestActivities/LatestActivities';
+import SiteControl from './SiteControl/SiteControl';
+import GeneralInfo from './GeneralInfo/GeneralInfo';
 
 export {
   Header,
@@ -40,4 +42,6 @@ export {
   ToggleCheckbox,
   MySkills,
   LatestActivities,
+  SiteControl,
+  GeneralInfo,
 };

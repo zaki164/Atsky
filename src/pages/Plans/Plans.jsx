@@ -1,8 +1,13 @@
-import "./Plans";
+import "./Plans.scss";
 
 const Plans = () => {
   return (
-    <div>Plans</div>
+    <main>
+      <h1>Plans</h1>
+      <div className="wrapper">
+
+      </div>
+    </main>
   )
 }
 

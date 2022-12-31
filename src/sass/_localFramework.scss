@@ -11,41 +11,16 @@
 .custom_shadow {
   box-shadow: 0 0 10px #ddd;
 }
-.main_heading {
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    border-radius: 2px;
-    left: 0;
-    bottom: 0;
-  }
-  &::before {
-    width: 145px;
-    background-color: $whiteColor;
-    @include media(sm) {
-      width: 95px;
-    }
-  }
-  &::after {
-    width: 50px;
-    background-color: $blackColor;
-    @include media(sm) {
-      width: 35px;
-    }
-  }
-}
 .fs_15 {
   font-size: 15px;
-@include media(sm) {
+  @include media(sm) {
   font-size: 13px;
+  }
 }
+.fs_16 {
+  @include media(sm) {
+    font-size: 14px;
+  }
 }
 .p_custom {
   color: $greyColor;

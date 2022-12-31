@@ -4,6 +4,7 @@ import { Courses, Dashboard, Files, Friends, Plans, Profile, Projects, Settings 
 const Router = () => {
   return (
     <Routes>
+      <Route exact path="/Atsky" element={<Dashboard />} />
       <Route exact path="/" element={<Dashboard />} />
       <Route path="/Settings" element={<Settings />} />
       <Route path="/Profile" element={<Profile />} />

@@ -4,7 +4,7 @@ import "./Dashboard.scss";
 const Dashboard = () => {
   return (
     <main>
-      <h1 className="main_heading">Dashboard</h1>
+      <h1>Dashboard</h1>
       <div className="wrapper">
         <Welcome />
         <QuickDraft />

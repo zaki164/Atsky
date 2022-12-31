@@ -25,6 +25,36 @@ main {
     padding: 10px;
   }
 }
+h1 {
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+  }
+  &::before {
+    width: 145px;
+    background-color: $whiteColor;
+    @include media(sm) {
+      width: 95px;
+    }
+  }
+  &::after {
+    width: 50px;
+    background-color: $blackColor;
+    @include media(sm) {
+      width: 35px;
+    }
+  }
+}
 h2 {
   font-weight: bold;
   font-size: 25px;
@@ -55,7 +85,7 @@ textarea {
   border-radius: 6px;
   border: $b13e;
   background-color: $whiteColor;
-  font-size: 15px;
+  font-size: 14px;
   @include media(sm) {
     font-size: 13px;
   }

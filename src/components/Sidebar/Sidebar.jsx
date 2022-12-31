@@ -9,9 +9,9 @@ const Sidebar = () => {
       <h4 className="title text-center position-relative fw-bold">{document.title}</h4>
       <ul className="flex-column">
       {
-        data.nav.map((ele, index) => 
+        data.nav.map((ele, i) => 
         (
-          <li key={index}>
+          <li key={i}>
             <NavLink exact="true" to={`/${ele.name === "Dashboard" ? "" : ele.name}`}>
               <FontAwesomeIcon icon={ele.icon} fixedWidth />
               <span>{ele.name}</span>

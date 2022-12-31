@@ -4,7 +4,7 @@ import "./Profile.scss";
 const Profile = () => {
   return (
     <main>
-      <h1 className="main_heading">Profile</h1>
+      <h1>Profile</h1>
       <div className="wrapper d-flex flex-wrap">
           <ProfileInfo />
           <MySkills />

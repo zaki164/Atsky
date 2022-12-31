@@ -378,6 +378,9 @@ const ActivitiesData = [
   },
 ];
 
+const WidgetsData = 
+["Quick Draft", "Yearly Targets", "Tickets Statistics", "Latest News", "Latest Tasks" , "Top Search Items"];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -392,6 +395,7 @@ const data = {
   TasksData,
   yearlyData,
   TicketsData,
+  WidgetsData,
 }
 
 export default data
