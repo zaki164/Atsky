@@ -1,8 +1,19 @@
 @import '../../sass/helpers';
 
 .SecurityInfo {
-  button {
-    border: none;
-    border: $b13c;
+  ul {
+    li {
+      padding: 15px 0;
+      &:not(:last-child) {
+        border-bottom: $b13e;
+      }
+      button {
+        border: none;
+        &.devices {
+          color: $blackColor;
+          background-color: $color3e;
+        }
+      }
+    }
   }
 }
