@@ -2,6 +2,27 @@
 
 .GeneralInfo {
   form {
-    
+    label {
+      color: $greyColor;
+      display: block;
+    }
+    input {
+      margin: 5px 0 10px;
+      border: $b13c;
+      &[type="email"] {
+        width: calc(100% - 80px);
+        &.disabled {
+          background-color: $bgColor;
+          cursor: no-drop;
+        }
+      }
+    }
+    button {
+      width: 80px;
+      border: none;
+      background-color: transparent;
+      color: $blueColor;
+      padding: 10px;
+    }
   }
 }

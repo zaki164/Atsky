@@ -1,4 +1,4 @@
-import { GeneralInfo, SiteControl } from '../../components';
+import { GeneralInfo, SecurityInfo, SiteControl } from '../../components';
 import "./Settings.scss";
 
 const Settings = () => {
@@ -8,6 +8,7 @@ const Settings = () => {
       <div className="wrapper">
         <SiteControl />
         <GeneralInfo />
+        <SecurityInfo />
       </div>
     </main>
   )

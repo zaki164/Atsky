@@ -20,6 +20,8 @@ import MySkills from './MySkills/MySkills';
 import LatestActivities from './LatestActivities/LatestActivities';
 import SiteControl from './SiteControl/SiteControl';
 import GeneralInfo from './GeneralInfo/GeneralInfo';
+import SecurityInfo from './SecurityInfo/SecurityInfo';
+
 
 export {
   Header,
@@ -44,4 +46,5 @@ export {
   LatestActivities,
   SiteControl,
   GeneralInfo,
+  SecurityInfo,
 };
