@@ -1,0 +1,35 @@
+@import '../../sass/helpers';
+
+.SocialInfo {
+  ul {
+    gap: 20px;
+    li {
+      background-color: #f6f6f6;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      @each $colorName, $color in $social {
+        &.#{$colorName} {
+          &:focus-within {
+            svg {
+              color: $color;
+            }
+          }
+        }
+      }
+      svg {
+        font-size: 18px;
+        padding: 13px;
+        color: $greyColor;
+        border-right: 1px solid #ddd;
+        transition: $mainTransition;
+        @include media(sm) {
+          font-size: 15px;
+        }
+      }
+      input {
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+}

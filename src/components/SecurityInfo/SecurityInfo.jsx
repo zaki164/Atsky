@@ -4,7 +4,7 @@ import { ToggleCheckbox } from '../index'
 const SecurityInfo = () => {
   return (
     <section className='SecurityInfo'>
-      <h2>SecurityInfo</h2>
+      <h2>Security Info</h2>
       <p className='p_custom'>Security Information About Your Account</p>
       <ul className='flex-column'>
         <li className='flex_between'>

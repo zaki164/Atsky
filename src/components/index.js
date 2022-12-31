@@ -21,6 +21,7 @@ import LatestActivities from './LatestActivities/LatestActivities';
 import SiteControl from './SiteControl/SiteControl';
 import GeneralInfo from './GeneralInfo/GeneralInfo';
 import SecurityInfo from './SecurityInfo/SecurityInfo';
+import SocialInfo from './SocialInfo/SocialInfo';
 
 
 export {
@@ -47,4 +48,5 @@ export {
   SiteControl,
   GeneralInfo,
   SecurityInfo,
+  SocialInfo,
 };
