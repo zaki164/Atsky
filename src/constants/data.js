@@ -498,9 +498,90 @@ const ProjectsData = [
     color: "blue",
     width: "80%",
   },
-]
+];
 
-
+const CoursesData = [
+  {
+    img: images.course1,
+    avatar: images.team1,
+    name: "Mastering Web Design",
+    details: "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+    subs: "950",
+    price: "165 $",
+  }, 
+  {
+    img: images.course2,
+    avatar: images.team2,
+    name: "Data Structure And Algorithms",
+    details: "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+    subs: "1150",
+    price: "210 $",
+  }, 
+  {
+    img: images.course3,
+    avatar: images.team1,
+    name: "Responsive Web Design",
+    details: "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+    subs: "650",
+    price: "90 $",
+  }, 
+  {
+    img: images.course4,
+    avatar: images.team3,
+    name: "Mastering Python",
+    details: "Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+    subs: "950",
+    price: "250 $",
+  }, 
+  {
+    img: images.course5,
+    avatar: images.team3,
+    name: "PHP Examples",
+    details: "PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+    subs: "850",
+    price: "150 $",
+  }, 
+  {
+    img: images.course2,
+    avatar: images.team2,
+    name: "Mastering Web Design",
+    details: "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+    subs: "1150",
+    price: "210 $",
+  }, 
+  {
+    img: images.course3,
+    avatar: images.team1,
+    name: "Responsive Web Design",
+    details: "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+    subs: "650",
+    price: "90 $",
+  }, 
+  {
+    img: images.course1,
+    avatar: images.team1,
+    name: "Mastering Web Design",
+    details: "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+    subs: "850",
+    price: "145 $",
+  },
+  {
+    img: images.course5,
+    avatar: images.team3,
+    name: "PHP Examples",
+    details: "PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+    subs: "850",
+    price: "150 $",
+  }, 
+  {
+    img: images.course4,
+    avatar: images.team3,
+    name: "Mastering Python",
+    details: "Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+    subs: "950",
+    price: "250 $",
+  }, 
+];
 
 const data = {
   nav,
@@ -519,6 +600,7 @@ const data = {
   WidgetsData,
   ServerNames,
   ProjectsData,
+  CoursesData,
 }
 
 export default data

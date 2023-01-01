@@ -19,6 +19,11 @@ import team5 from "../assets/team-05.png";
 import activity1 from "../assets/activity-01.png";
 import activity2 from "../assets/activity-02.png";
 import activity3 from "../assets/activity-03.png";
+import course1 from "../assets/course-01.jpg";
+import course2 from "../assets/course-02.jpg";
+import course3 from "../assets/course-03.jpg";
+import course4 from "../assets/course-04.jpg";
+import course5 from "../assets/course-05.jpg";
 
 
 const images = {
@@ -43,6 +48,11 @@ const images = {
   activity1,
   activity2,
   activity3,
+  course1,
+  course2,
+  course3,
+  course4,
+  course5,
 } 
 
 export default images ;
