@@ -1,0 +1,8 @@
+@import '../../sass/helpers';
+
+.Plans {
+  .wrapper {
+    @include wrapper(400px, 200px);
+
+  }
+}

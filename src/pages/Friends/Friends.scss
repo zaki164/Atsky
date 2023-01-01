@@ -1,0 +1,76 @@
+@import '../../sass/helpers';
+
+.Friends {
+  .wrapper {
+    @include wrapper(300px, 200px);
+    .friend_box {
+      .contact {
+        left: 10px;
+        top: 10px;
+        @include media(sm) {
+          left: 5px;
+          top: 5px;
+        }
+        svg {
+          background-color: $color3e;
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 13px;
+          font-weight: bold;
+          color: #666;
+          cursor: pointer;
+          transition: $mainTransition;
+          &:hover {
+            background-color: $blueColor;
+            color: $whiteColor;
+          }
+        }
+      }
+      .head {
+        padding: 10px 0;
+        gap: 10px;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          @include media(sm) {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+      .details {
+        padding: 10px 0;
+        border-top: $b13e;
+        border-bottom: $b13e;
+        .vip {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $redColor;
+          font-size: 40px;
+          font-weight: bold;
+          opacity: .4;
+          @include media(sm) {
+            font-size: 35px;
+          }
+        }
+      }
+      .footer {
+        padding-top: 10px;
+        p, a {
+          font-size: 13px;
+          @include media(sm) {
+            font-size: 12px;
+          }
+        }
+        .options {
+          .remove {
+            background-color: $redColor;
+          }
+        }
+      }
+    }
+  }
+}
