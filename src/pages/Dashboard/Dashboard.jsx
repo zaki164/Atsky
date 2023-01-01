@@ -3,7 +3,7 @@ import "./Dashboard.scss";
 
 const Dashboard = () => {
   return (
-    <main>
+    <main className="Dashboard">
       <h1>Dashboard</h1>
       <div className="wrapper">
         <Welcome />

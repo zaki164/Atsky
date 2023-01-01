@@ -3,7 +3,7 @@ import "./Settings.scss";
 
 const Settings = () => {
   return (
-    <main>
+    <main className='Setting'>
       <h1>Settings</h1>
       <div className="wrapper">
         <SiteControl />

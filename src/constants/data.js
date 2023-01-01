@@ -407,6 +407,101 @@ const WidgetsData = [
 
 const ServerNames = ["Megaman", "Zero", "Sigma"];
 
+const ProjectsData = [
+  {
+    author: "Zaki Dashboard",
+    title: "Zaki Dashboard Project Design And Programming And Hosting",
+    date: "15/10/2021",
+    imgs: [images.team1, images.team2, images.team3, images.team4, images.team5],
+    details: ["Programming", "Design", "Hosting", "Marketing"],
+    price: "2500 $",
+    color: "blue",
+    width: "90%"
+  },
+  {
+    author: "Academy Portal",
+    title: "Academy Portal Project Design And Programming",
+    date: "15/6/2022",
+    imgs: [images.team4, images.team2, images.team1],
+    details: ["Programming", "Design"],
+    price: "1800 $",
+    color: "orange",
+    width: "50%"
+  },
+  {
+    author: "Chatting Application",
+    title: "Chatting Application Project Design",
+    date: "8/8/2021",
+    imgs: [images.team2, images.team5],
+    details: ["Design"],
+    price: "950 $",
+    color: "green",
+    width: "70%"
+  },
+  {
+    author: "Ahmed Dashboard",
+    title: "Ahmed Dashboard Project Hosting",
+    date: "13/11/2021",
+    imgs: [images.team3],
+    details: ["Hosting"],
+    price: "700 $",
+    color: "green",
+    width: "80%"
+  },
+  {
+    author: "Ahmed Portal",
+    title: "Ahmed Portal Project Design And Programming",
+    date: "10/10/2021",
+    imgs: [images.team1, images.team2, images.team3],
+    details: ["Programming", "Design"],
+    price: "1500 $",
+    color: "orange",
+    width: "30%"
+  },
+  {
+    author: "Mohamed Application",
+    title: "Mohamed Application Project Design",
+    date: "5/9/2021",
+    imgs: [images.team2, images.team3],
+    details: ["Design"],
+    price: "900 $",
+    color: "red",
+    width: "10%"
+  },
+  {
+    author: "Mohamed Dashboard",
+    title: "Mohamed Dashboard Project Design And Programming And Hosting",
+    date: "25/9/2021",
+    imgs: [images.team1, images.team3, images.team4, images.team2, images.team5],
+    details: ["Programming", "Design", "Hosting", "Marketing"],
+    price: "1650 $",
+    color: "green",
+    width: "40%"
+  },
+  {
+    author: "Mohamed Portal",
+    title: "Mohamed Portal Project Design And Programming",
+    date: "5/12/2021",
+    imgs: [images.team2, images.team4, images.team5],
+    details: ["Programming", "Design"],
+    price: "2600 $",
+    color: "red",
+    width: "20%"
+  },
+  {
+    author: "Ahmed Application",
+    title: "Ahmed Application Project Design",
+    date: "4/8/2021",
+    imgs: [images.team1, images.team2, images.team4, images.team5],
+    details: ["Design"],
+    price: "80 $",
+    color: "blue",
+    width: "80%",
+  },
+]
+
+
+
 const data = {
   nav,
   LatestUploadsData,
@@ -423,6 +518,7 @@ const data = {
   TicketsData,
   WidgetsData,
   ServerNames,
+  ProjectsData,
 }
 
 export default data

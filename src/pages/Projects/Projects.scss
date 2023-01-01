@@ -1,0 +1,48 @@
+@import '../../sass/helpers';
+
+.Projects {
+  .wrapper {
+    @include wrapper(500px, 200px)
+  }
+  .project {
+    position: relative;
+    > div {
+      padding: 15px 0;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    .profiles {
+      padding-top: 0;
+      .image_holder {
+        @include imgsProfile;
+      }
+    }
+    .details {
+      border-top: $b13e;
+      border-bottom: $b13e;
+      gap: 8px;
+      justify-content: flex-end;
+      @include media(sm) {
+        justify-content: center;
+      }
+      span {
+        background-color: $color3e;
+        color: $blackColor;
+      }
+    }
+    .stats {
+      .prog {
+        width: 50%;
+      }
+    }
+    .date {
+      position: absolute;
+      right: 20px;
+      top: 0;
+    }
+  }
+}

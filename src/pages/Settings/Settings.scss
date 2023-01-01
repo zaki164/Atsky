@@ -1,5 +1,7 @@
 @import '../../sass/helpers';
 
-.wrapper {
-  @include wrapper(500px, 100px);
+.Setting {
+  .wrapper {
+    @include wrapper(500px, 100px);
+  }
 }

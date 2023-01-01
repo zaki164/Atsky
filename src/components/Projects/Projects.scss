@@ -35,24 +35,7 @@
               border-right: $b13e;
             }
             .image_holder {
-              width: 32px;
-              height: 32px;
-              display: inline-block;
-              position: relative;
-              z-index: 1;
-              &:hover {
-                z-index: 2;
-              }
-              &:not(:first-child) {
-                margin-left: -15px;
-              }
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                background-color: $whiteColor;
-                padding: 2px;
-              }
+              @include imgsProfile;
             }
             .status {
               color: $whiteColor;

@@ -3,7 +3,7 @@ import "./Profile.scss";
 
 const Profile = () => {
   return (
-    <main>
+    <main className="Profile">
       <h1>Profile</h1>
       <div className="wrapper d-flex flex-wrap">
           <ProfileInfo />

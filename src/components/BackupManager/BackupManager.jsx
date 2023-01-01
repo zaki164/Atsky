@@ -19,7 +19,7 @@ const BackupManager = () => {
           data.ServerNames.map((server, i) =>
           (
             <Fragment key={i}>
-              <input type="radio" name='server' id={server} />
+              <input type="radio" name='server' id={server} defaultChecked />
               <div className='flex-grow-1 text-center'>
                 <label htmlFor={server}>
                   <FontAwesomeIcon icon={faServer} />

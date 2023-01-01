@@ -1,5 +1,8 @@
 @import "../../sass/helpers";
 
-.wrapper {
-  @include wrapper(450px, 200px);
+.Dashboard {
+  .wrapper {
+    @include wrapper(450px, 200px);
+    margin-bottom: 20px;
+  } 
 }

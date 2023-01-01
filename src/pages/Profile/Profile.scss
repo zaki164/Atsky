@@ -1,7 +1,11 @@
 @import '../../sass/helpers';
 
-.wrapper {
-  @include media(md) {
-    flex-direction: column;
+.Profile {
+  .wrapper {
+    gap: 20px;
+    @include media(md) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 }
