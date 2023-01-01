@@ -1,5 +1,5 @@
 import { data } from '../../constants'
-import { ComponentOption } from '../index'
+import { CustomCheckBox } from '../index'
 import './Widgets.scss'
 
 const Widgets = () => {
@@ -10,7 +10,7 @@ const Widgets = () => {
       {
         data.WidgetsData.map((ele, i) => 
         (
-          <ComponentOption name={ele.name} ischecked={ele.checked} key={i} />
+          <CustomCheckBox name={ele.name} ischecked={ele.checked} key={i} />
         ))
       }
     </section>

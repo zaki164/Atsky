@@ -1,6 +1,6 @@
 @import '../../../sass/helpers';
 
-.ComponentOption {
+.CustomCheckBox {
   input {
     display: none;
     &:checked + label {

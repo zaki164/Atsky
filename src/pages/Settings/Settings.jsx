@@ -1,4 +1,4 @@
-import { GeneralInfo, SecurityInfo, SiteControl, SocialInfo, Widgets } from '../../components';
+import { BackupManager, GeneralInfo, SecurityInfo, SiteControl, SocialInfo, Widgets } from '../../components';
 import "./Settings.scss";
 
 const Settings = () => {
@@ -11,6 +11,7 @@ const Settings = () => {
         <SecurityInfo />
         <SocialInfo />
         <Widgets />
+        <BackupManager />
       </div>
     </main>
   )

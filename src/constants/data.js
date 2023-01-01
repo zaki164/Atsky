@@ -405,6 +405,8 @@ const WidgetsData = [
   }
 ];
 
+const ServerNames = ["Megaman", "Zero", "Sigma"];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -420,6 +422,7 @@ const data = {
   yearlyData,
   TicketsData,
   WidgetsData,
+  ServerNames,
 }
 
 export default data

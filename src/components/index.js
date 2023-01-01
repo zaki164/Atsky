@@ -23,7 +23,9 @@ import GeneralInfo from './GeneralInfo/GeneralInfo';
 import SecurityInfo from './SecurityInfo/SecurityInfo';
 import SocialInfo from './SocialInfo/SocialInfo';
 import Widgets from './Widgets/Widgets';
-import ComponentOption from './custom/ComponentOption/ComponentOption';
+import CustomCheckBox from './custom/CustomCheckBox/CustomCheckBox';
+import CustomRadio from './custom/CustomRadio/CustomRadio';
+import BackupManager from './BackupManager/BackupManager';
 
 
 export {
@@ -52,5 +54,7 @@ export {
   SecurityInfo,
   SocialInfo,
   Widgets,
-  ComponentOption,
+  CustomCheckBox,
+  CustomRadio,
+  BackupManager,
 };

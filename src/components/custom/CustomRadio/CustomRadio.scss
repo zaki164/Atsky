@@ -1,0 +1,61 @@
+@import '../../../sass/helpers';
+
+.CustomRadio {
+  input {
+    display: none;
+    &:checked + label {
+      &::before {
+        border-color: $blueColor;
+      }
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+  label {
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      &::before {
+        border-color: $blueColor;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $whiteColor;
+      border: 2px solid $greyColor;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: $mainTransition;
+      @include media(sm) {
+        width: 16px;
+        height: 16px;
+        left: 10px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $blueColor;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      left: 11.5px;
+      top: 50%;
+      margin-top: -6.5px;
+      transform: scale(0);
+      transition: $mainTransition;
+      @include media(sm) {
+        width: 6px;
+        height: 6px;
+        left: 10px;
+      }
+    }
+  }
+}
