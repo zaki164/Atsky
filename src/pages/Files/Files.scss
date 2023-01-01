@@ -1,8 +1,45 @@
 @import '../../sass/helpers';
 
 .Files {
-  .wrapper {
-    @include wrapper(400px, 200px);
-
+  .Files_content {
+    gap: 20px;
+    @include media(sm) {
+      gap: 10px;
+    }
+    .wrapper {
+      @include wrapper(200px, 200px);
+      
+    }
+    .stats {
+      // min-width: 260px;
+      min-width: 300px;
+      ul {
+        gap: 15px;
+        margin: 15px 0;
+        li {
+          padding: 10px;
+          border: $b13e;
+          border-radius: 8px;
+          svg {
+            padding: 15px;
+            @each $colorName, $color in $colors {
+              &.#{$colorName} {
+                color: $color;
+                background-color: rgba($color, .3);
+              }
+            }
+          }
+        }
+      }
+      .upload {
+        padding: 10px 15px;
+        cursor: pointer;
+        &:hover {
+          svg {
+            animation: angleUp .8s linear infinite;
+          }
+        }
+      }
+    }
   }
 }
