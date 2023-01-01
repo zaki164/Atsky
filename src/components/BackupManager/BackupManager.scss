@@ -3,13 +3,12 @@
 .BackupManager {
   .CustomRadio {
     padding-bottom: 10px;
-    &:last-child {
-      border-bottom: $b13e;
-    }
   }
   .server {
     margin: 15px 0;
     gap: 10px;
+    border-top: $b13e;
+    padding-top: 20px;
     @include media(sm) {
       flex-direction: column;
     }

@@ -34,8 +34,8 @@
       transform: translateY(-50%);
       transition: $mainTransition;
       @include media(sm) {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         left: 10px;
       }
     }
@@ -52,9 +52,10 @@
       transform: scale(0);
       transition: $mainTransition;
       @include media(sm) {
-        width: 6px;
-        height: 6px;
-        left: 10px;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        left: 13.5px;
       }
     }
   }
