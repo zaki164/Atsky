@@ -34,7 +34,11 @@ const Projects = () => {
               </div>
               <div className='date p_custom'>{box.date}</div>
               <div className='stats flex_between'>
-                <CustomProgBar color={box.color} width={box.width} />
+                <CustomProgBar color={
+                  parseInt(box.width) >= 85 ? "blue" :
+                  parseInt(box.width) >= 65 ? "green" :
+                  parseInt(box.width) >= 30 ? "orange" : "red"
+                  } width={box.width} />
                 <span className='p_custom fw-bold'>{box.price}</span>
               </div>
             </section>

@@ -1,5 +1,6 @@
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { data } from '../../constants'
 import "./Courses.scss";
 
@@ -9,11 +10,13 @@ const Courses = () => {
       <h1>Courses</h1>
       <div className="wrapper">
         {
-          data.CoursesData.map((box, i) => 
+          data.CoursesData.map((box, i) =>
           (
             <section className='course' key={i}>
               <img className='imgbg' src={box.img} alt="courseBG" />
-              <img className='imgavatar' src={box.avatar} alt="avatar" />
+              <Link to='/profile' className='imgavatar'>
+                <img src={box.avatar} alt="avatar" />
+              </Link>
               <div className='content'>
                 <h4>{box.name}</h4>
                 <p className='p_custom'>{box.details}</p>

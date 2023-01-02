@@ -415,7 +415,6 @@ const ProjectsData = [
     imgs: [images.team1, images.team2, images.team3, images.team4, images.team5],
     details: ["Programming", "Design", "Hosting", "Marketing"],
     price: "2500 $",
-    color: "blue",
     width: "90%"
   },
   {
@@ -425,7 +424,6 @@ const ProjectsData = [
     imgs: [images.team4, images.team2, images.team1],
     details: ["Programming", "Design"],
     price: "1800 $",
-    color: "orange",
     width: "50%"
   },
   {
@@ -435,7 +433,6 @@ const ProjectsData = [
     imgs: [images.team2, images.team5],
     details: ["Design"],
     price: "950 $",
-    color: "green",
     width: "70%"
   },
   {
@@ -445,7 +442,6 @@ const ProjectsData = [
     imgs: [images.team3],
     details: ["Hosting"],
     price: "700 $",
-    color: "green",
     width: "80%"
   },
   {
@@ -455,7 +451,6 @@ const ProjectsData = [
     imgs: [images.team1, images.team2, images.team3],
     details: ["Programming", "Design"],
     price: "1500 $",
-    color: "orange",
     width: "30%"
   },
   {
@@ -465,7 +460,6 @@ const ProjectsData = [
     imgs: [images.team2, images.team3],
     details: ["Design"],
     price: "900 $",
-    color: "red",
     width: "10%"
   },
   {
@@ -475,7 +469,6 @@ const ProjectsData = [
     imgs: [images.team1, images.team3, images.team4, images.team2, images.team5],
     details: ["Programming", "Design", "Hosting", "Marketing"],
     price: "1650 $",
-    color: "green",
     width: "40%"
   },
   {
@@ -485,7 +478,6 @@ const ProjectsData = [
     imgs: [images.team2, images.team4, images.team5],
     details: ["Programming", "Design"],
     price: "2600 $",
-    color: "red",
     width: "20%"
   },
   {
@@ -495,8 +487,7 @@ const ProjectsData = [
     imgs: [images.team1, images.team2, images.team4, images.team5],
     details: ["Design"],
     price: "80 $",
-    color: "blue",
-    width: "80%",
+    width: "86%",
   },
 ];
 
