@@ -378,32 +378,14 @@ const ActivitiesData = [
   },
 ];
 
-const WidgetsData = [
-  {
-    name: "Quick Draft",
-    checked: true
-  },
-  {
-    name: "Yearly Targets",
-    checked: true
-  },
-  {
-    name: "Tickets Statistics",
-    checked: true
-  },
-  {
-    name: "Latest News",
-    checked: true
-  },
-  {
-    name: "Latest Tasks",
-    checked: false
-  },
-  {
-    name: "Top Search Items",
-    checked: true
-  }
-];
+const WidgetsData = {
+  "Quick Draft": true,
+  "Yearly Targets": true,
+  "Tickets Statistics": true,
+  "Latest News": false,
+  "Latest Tasks": true,
+  "Top Search Items": true,
+}
 
 const ServerNames = ["Megaman", "Zero", "Sigma"];
 
