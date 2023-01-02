@@ -1,9 +1,11 @@
+import { useDispatch } from 'react-redux'
+import { CompAction } from '../../../redux/Actions';
 import './CustomCheckBox.scss'
 
 const CustomCheckBox = ({name, ischecked}) => {
+  const dispatch = useDispatch();
   const handleCheckBox = (e) => {
-    // e.target.checked
-    // e.target.value
+    dispatch(CompAction(e.target.value))
   }
   return (
     <div className='CustomCheckBox'>

@@ -382,7 +382,7 @@ const WidgetsData = {
   "Quick Draft": true,
   "Yearly Targets": true,
   "Tickets Statistics": true,
-  "Latest News": false,
+  "Latest News": true,
   "Latest Tasks": true,
   "Top Search Items": true,
 }
