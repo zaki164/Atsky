@@ -5,6 +5,7 @@ import news2 from "../assets/news-02.png";
 import news3 from "../assets/news-03.png";
 import news4 from "../assets/news-04.png";
 import pdf from "../assets/pdf.svg";
+import png from "../assets/png.svg";
 import avi from "../assets/avi.svg";
 import dll from "../assets/dll.svg";
 import eps from "../assets/eps.svg";
@@ -63,6 +64,7 @@ const images = {
   friend3,
   friend4,
   friend5,
+  png,
 } 
 
 export default images ;

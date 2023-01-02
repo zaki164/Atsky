@@ -3,16 +3,61 @@
 .Files {
   .Files_content {
     gap: 20px;
+    align-items: flex-start;
     @include media(sm) {
       gap: 10px;
+      flex-direction: column-reverse;
+      align-items: normal;
     }
     .wrapper {
       @include wrapper(200px, 200px);
-      
+      .file {
+        padding: 10px;
+        &:hover {
+          img {
+            transform: rotate(7deg);
+          }
+        }
+        .download {
+          left: 10px;
+          top: 10px;
+          color: $greyColor;
+          @include media(sm) {
+            font-size: 14px;
+          }
+        }
+        .head {
+          padding: 10px 0;
+          @include media(sm) {
+            padding: 5px 0 0;
+          }
+          img {
+            width: 64px;
+            height: 64px;
+            transition: $mainTransition;
+            @include media(sm) {
+              width: 48px;
+              height: 48px;
+            }
+          }
+        }
+        .footer {
+          font-size: 13px;
+          color: $greyColor;
+          padding: 10px 0 0;
+          border-top: $b13e;
+          @include media(sm) {
+            padding: 5px 0 0;
+            font-size: 12px;
+          }
+        }
+      }
     }
     .stats {
-      // min-width: 260px;
       min-width: 300px;
+      @include media(sm) {
+        min-width: 100%;
+      }
       ul {
         gap: 15px;
         margin: 15px 0;

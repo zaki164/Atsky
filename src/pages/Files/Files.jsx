@@ -1,15 +1,32 @@
 import { faFilePdf, faFileWord, faImages } from "@fortawesome/free-regular-svg-icons";
-import { faAnglesUp, faFileCsv } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesUp, faDownload, faFileCsv } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { data } from '../../constants'
 import "./Files.scss";
 
 const Files = () => {
   return (
     <main className="Files">
       <h1>Files</h1>
-      <div className="Files_content d-flex align-items-start">
+      <div className="Files_content d-flex">
         <div className="wrapper flex-grow-1">
-
+          {
+            data.FilesData.map((file, i) =>
+            (
+              <section className="file position-relative" key={i}>
+                <FontAwesomeIcon icon={faDownload} className="position-absolute download" />
+                <div className="head text-center">
+                  <img src={file.img} alt="fileImg" />
+                  <p className="fs_16 my-2">my-file.{file.extention}</p>
+                  <p className="p_custom mb-0 text-start">{file.name}</p>
+                </div>
+                <div className="footer flex_between">
+                  <span>{file.date}</span>
+                  <span>{file.size}MB</span>
+                </div>
+              </section>
+            ))
+          }
         </div>
         <section className="stats">
           <h2>Files Statistics</h2>
