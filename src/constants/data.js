@@ -883,11 +883,11 @@ const PlansData = [
   },
   {
     plan: "Premium",
-    price: 0.00,
-    color: "green",
+    price: 19.99,
+    color: "orange",
     allow: ["Access All Text Lessons", "Access All Videos Lessons", "Appear On Leaderboard", "Browse Content Without Ads", "Access All Assignments", "Get Daily Prizes", "Earn Certificate", "1 GB Space For Hosting Files", "Access Badge System"],
     blocked: [],
-    current: true
+    current: false
   },
 ];
 

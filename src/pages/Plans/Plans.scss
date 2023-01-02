@@ -2,7 +2,117 @@
 
 .Plans {
   .wrapper {
-    @include wrapper(400px, 200px);
-    
+    @include wrapper(450px, 250px);
+    .plan {
+      @each $colorName, $color in $colors {
+        &.#{$colorName} {
+          .header {
+            background-color: $color;
+            outline: 3px solid $color;
+          }
+          .footer {
+            p {
+              color: $color;
+            }
+            span {
+              background-color: $color;
+              &:hover {
+                background-color: rgba($color, .8);
+              }
+            }
+          }
+        }
+      }
+      .header {
+          color: $whiteColor;
+          border: 3px solid $whiteColor;
+          padding: 25px;
+          @include media(sm) {
+            padding: 15px;
+          }
+          .price {
+            position: relative;
+            width: fit-content;
+            margin: auto; 
+            font-size: 40px;
+            @include media(sm) {
+              font-size: 30px;
+            }
+            &::before {
+              content: "$";
+              position: absolute;
+              left: -20px;
+              top: 0;
+              font-size: 25px;
+              @include media(sm) {
+                font-size: 20px;
+                left: -15px;
+              }
+            }
+          }
+      }
+      ul {
+        margin: 20px 0;
+        @include media(sm) {
+          margin: 15px 0;
+        }
+        li {
+          border-bottom: $b13e;
+          position: relative;
+          padding: 15px 0 15px 40px;
+          @include media(sm) {
+            padding: 10px 0 15px 30px;
+          }
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            @include media(sm) {
+              left: 15px;
+              margin-top: -2px;
+            }
+          }
+          &.allow {
+            &::before {
+              content: "\f00c";
+              color: $greenColor;
+            }
+          }
+          &.blocked {
+            &::before {
+              content: "\f00d";
+              color: $redColor;
+            }
+          }
+          span {
+            @include media(sm) {
+              font-size: 13px;
+            }
+          }
+          .info {
+            color: $greyColor;
+            cursor: pointer;
+          }
+        }
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        @include media(sm) {
+          padding: 5px 0;
+        }
+        p {
+          font-weight: bold;
+        }
+        span {
+          padding: 5px 20px;
+          cursor: pointer;
+          transition: $mainTransition;
+        }
+      }
+    }
   }
 }
