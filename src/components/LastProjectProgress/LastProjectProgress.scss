@@ -1,6 +1,7 @@
 @import "../../sass/helpers";
 
 .project_progress {
+  overflow: hidden;
   ul {
     margin-top: 20px;
     gap: 25px;
@@ -57,7 +58,11 @@
     width: 160px;
     position: absolute;
     right: 0;
+    top: calc(100% - 152px);
     bottom: 0;
     opacity: .3;
+    &.anime {
+      animation: launchImg 4s ease-in infinite;
+    }
   }
 }

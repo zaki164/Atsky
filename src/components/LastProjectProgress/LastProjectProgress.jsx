@@ -1,7 +1,17 @@
+import { useEffect, useRef } from 'react';
 import { images } from '../../constants';
 import './LastProjectProgress.scss';
 
 const LastProjectProgress = () => {
+  const launchRef = useRef();
+  useEffect(() => {
+    const myinterval = setInterval(() => {
+      launchRef.current.classList.toggle('anime');
+    }, 4000)
+    return () => {
+      clearInterval(myinterval);
+    }
+  }, [])
   return (
     <section className='project_progress position-relative'>
       <h2>Last Project Progress</h2>
@@ -12,7 +22,7 @@ const LastProjectProgress = () => {
         <li className='current'>Test The Project</li>
         <li>Finish The Project</li>
       </ul>
-      <img src={images.project} alt="project" className='hide_mobile' />
+      <img src={images.project} alt="project" className='hide_mobile' ref={launchRef} />
     </section>
   )
 }
