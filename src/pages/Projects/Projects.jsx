@@ -11,7 +11,7 @@ const Projects = () => {
         {
           data.ProjectsData.map((box, i) =>
           (
-            <section className='project d-flex flex-column' key={i}>
+            <section className='project d-flex flex-column' key={i} data-aos="fade-up">
               <div>
                 <h4>{box.author}</h4>
                 <p className='p_custom'>{box.title}</p>

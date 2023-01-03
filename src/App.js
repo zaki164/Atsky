@@ -9,7 +9,6 @@ AOS.init({
   once: true,
 });
 
-
 const App = () => (
   <BrowserRouter>
     <Layout />

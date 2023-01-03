@@ -12,7 +12,7 @@ const Courses = () => {
         {
           data.CoursesData.map((box, i) =>
           (
-            <section className='course' key={i}>
+            <section className='course' key={i} data-aos="fade-up">
               <img className='imgbg' src={box.img} alt="courseBG" />
               <Link to='/profile' className='imgavatar'>
                 <img src={box.avatar} alt="avatar" />

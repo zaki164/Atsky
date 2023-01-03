@@ -4,7 +4,7 @@ import './Projects.scss';
 
 const Projects = () => {
   return (
-    <section className='Projects'>
+    <section className='Projects' data-aos="fade-up">
       <h2>Projects</h2>
       <div className="projects_table">
         <table className='w-100'>

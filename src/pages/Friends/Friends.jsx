@@ -28,7 +28,7 @@ const Friends = () => {
         {
           updatedData.map((box, i) =>
           (
-            <section className="friend_box position-relative" key={i}>
+            <section className="friend_box position-relative" key={i} data-aos="fade-up">
               <div className='contact position-absolute'>
                 <FontAwesomeIcon icon={faPhone} className="me-1" />
                 <FontAwesomeIcon icon={faEnvelope} />

@@ -11,7 +11,7 @@ const Plans = () => {
         {
           data.PlansData.map((plan, i) =>
           (
-            <section className={`plan ${plan.color}`} key={i}>
+            <section className={`plan ${plan.color}`} key={i} data-aos="fade-up">
               <div className="header text-center">
                 <h2>{plan.plan}</h2>
                 <p className="mb-0 price">{plan.price}</p>

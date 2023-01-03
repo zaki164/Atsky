@@ -1,13 +1,20 @@
+import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import { LastProjectProgress, LatestNews, LatestPost, LatestUploads, Projects, QuickDraft, Reminders, SearchItems, SocialMedia, Tasks, Tickets, Welcome, YearlyTargets } from "../../components";
 import "./Dashboard.scss";
 
 const Dashboard = () => {
   const widgetsDataReducer = useSelector(state => state)
+  const wrapperRef = useRef();
+  useEffect(() => {
+    [...wrapperRef.current.children].forEach(ele => {
+      ele.setAttribute('data-aos', "fade-up")
+    })
+  }, [])
   return (
     <main className="Dashboard">
       <h1>Dashboard</h1>
-      <div className="wrapper">
+      <div className="wrapper" ref={wrapperRef}>
         <Welcome />
         {widgetsDataReducer["Quick Draft"] && <QuickDraft />}
         {widgetsDataReducer["Yearly Targets"] && <YearlyTargets />}

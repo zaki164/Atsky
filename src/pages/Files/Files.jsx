@@ -13,7 +13,7 @@ const Files = () => {
           {
             data.FilesData.map((file, i) =>
             (
-              <section className="file position-relative" key={i}>
+              <section className="file position-relative" key={i} data-aos="fade-up">
                 <FontAwesomeIcon icon={faDownload} className="position-absolute download" />
                 <div className="head text-center">
                   <img src={file.img} alt="fileImg" />
@@ -28,7 +28,7 @@ const Files = () => {
             ))
           }
         </div>
-        <section className="stats">
+        <section className="stats" data-aos="fade-up">
           <h2>Files Statistics</h2>
           <ul className="flex-column">
             <li className="flex_between">
