@@ -2,7 +2,7 @@
 
 .Projects {
   .wrapper {
-    @include wrapper(500px, 200px)
+    @include wrapper(400px, 200px)
   }
   .project {
     position: relative;

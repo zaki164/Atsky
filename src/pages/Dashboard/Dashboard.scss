@@ -2,7 +2,7 @@
 
 .Dashboard {
   .wrapper {
-    @include wrapper(450px, 200px);
+    @include wrapper(400px, 200px);
     margin-bottom: 20px;
   } 
 }

@@ -10,7 +10,7 @@
       align-items: normal;
     }
     .wrapper {
-      @include wrapper(200px, 200px);
+      @include wrapper(250px, 200px);
       .file {
         padding: 10px;
         &:hover {

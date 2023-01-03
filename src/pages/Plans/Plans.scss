@@ -2,7 +2,7 @@
 
 .Plans {
   .wrapper {
-    @include wrapper(450px, 250px);
+    @include wrapper(500px, 250px);
     .plan {
       @each $colorName, $color in $colors {
         &.#{$colorName} {

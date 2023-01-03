@@ -2,7 +2,7 @@
 
 .Courses {
   .wrapper {
-    @include wrapper(300px, 200px);
+    @include wrapper(350px, 200px);
     .course {
       padding: 0;
       position: relative;
