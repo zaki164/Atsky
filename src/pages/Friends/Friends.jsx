@@ -1,33 +1,26 @@
 import { faEnvelope, faFaceSmile, faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import { faCodeCommit, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { data } from '../../constants'
 import "./Friends.scss";
 
 const Friends = () => {
-  const FriendsRef = useRef();
-  const [updatedData, setupdatedData] = useState(JSON.parse(sessionStorage.getItem('Friends')) || data.FriendsData)
-  const handlesessionStorage = (ele) => {
-    let newarr = JSON.parse(sessionStorage.getItem('Friends')).filter(element => element.id !== ele.id)
+  const [updatedData, setupdatedData] = useState(JSON.parse(localStorage.getItem('Friends')) || data.FriendsData)
+  const handlelocalStorage = (box) => {
+    let newarr = JSON.parse(localStorage.getItem('Friends')).filter(element => element.id !== box.id)
     setupdatedData(newarr)
-    sessionStorage.setItem('Friends', JSON.stringify(newarr));
+    localStorage.setItem('Friends', JSON.stringify(newarr));
   }
   const handledelete = (ele) => {
-    if (!sessionStorage.getItem('Friends')) {
-      sessionStorage.setItem('Friends', JSON.stringify(data.FriendsData));
-      handlesessionStorage(ele)
+    if (!localStorage.getItem('Friends')) {
+      localStorage.setItem('Friends', JSON.stringify(data.FriendsData));
+      handlelocalStorage(ele)
     } else {
-      handlesessionStorage(ele)
+      handlelocalStorage(ele)
     }
   }
-  // const ShowComp = () => {
-  //   FriendsRef.current.style.display = "none";
-  // }
-  // useEffect(() => {
-  //   updatedData.length === 0 && ShowComp()
-  // }, [updatedData])
   return (
     <main className='Friends'>
       <h1>Friends</h1>
