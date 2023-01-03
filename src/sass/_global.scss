@@ -7,8 +7,38 @@
 *:focus {
   outline: none;
 }
+// --mainTheme: #fff;
+// --textColor: #000;
+// --bgColor: #f1f5f9;
+// --greyColor: #888;
+// --color3e: #eee;
+:root {
+  --mainTheme: #fff;
+  --textColor: #000;
+  --bgColor: #f1f5f9;
+  --greyColor: #888;
+  --color3e: #eee;
+  body {
+    color: var(--textColor);
+    font-family: $fontBase;
+    // --mainTheme: #1a1719;
+    // --textColor: #fff;
+    // --bgColor: #263340;
+    // --greyColor: #888;
+    // &.dark {
+    // }
+  }
+}
 body {
-  font-family: $fontBase;
+  // --colorBlack: #0C0C0C;
+  // --colorBlack: #3b3a37;
+  // --colorDark: #666;
+  // --bgDark: #222;
+  // --bgDark2: #15161D;
+  // --bg-dark3: #171613;
+  // --bg-dark4: #121212;
+  // --bg-dark5: #181818;
+  // --bgColor: #1a1719;
 }
 a {
   text-decoration: none;

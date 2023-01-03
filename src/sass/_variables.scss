@@ -1,17 +1,17 @@
-$whiteColor: #fff;
-$blackColor: #000;
-$bgColor: #f1f5f9;
+$whiteColor: var(--mainTheme);
+$blackColor: var(--textColor);
+$bgColor: var(--bgColor);
+$greyColor: var(--greyColor);
 $color3e: #eee;
+$b13e: 1px solid $color3e;
+$b13c: 1px solid #ccc;
 $blueColor: #0075ff;
 $blueColorAlt: #0d69d5;
 $orangeColor: #f59e0b;
 $greenColor: #22c55e;
 $redColor: #f44336;
-$greyColor: #888;
 $fontBase: 'Open Sans', sans-serif;
 $mainTransition: .3s;
-$b13e: 1px solid $color3e;
-$b13c: 1px solid #ccc;
 $colors: 
 "blue" $blueColor,
 "orange" $orangeColor,

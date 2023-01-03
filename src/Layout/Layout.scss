@@ -20,6 +20,7 @@
     border-radius: 0 0 15px 0;
     z-index: 20;
     margin-left: -3px;
+    box-shadow: 5px 5px 5px #ddd;
     cursor: pointer;
     transition: $mainTransition;
     &:hover {
