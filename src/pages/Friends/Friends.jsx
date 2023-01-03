@@ -1,20 +1,39 @@
 import { faEnvelope, faFaceSmile, faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import { faCodeCommit, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { data } from '../../constants'
 import "./Friends.scss";
 
 const Friends = () => {
-  const handleClick = (e) => {
-    e.currentTarget.offsetParent.style.display = "none";
+  const FriendsRef = useRef();
+  const [updatedData, setupdatedData] = useState(JSON.parse(sessionStorage.getItem('Friends')) || data.FriendsData)
+  const handlesessionStorage = (ele) => {
+    let newarr = JSON.parse(sessionStorage.getItem('Friends')).filter(element => element.id !== ele.id)
+    setupdatedData(newarr)
+    sessionStorage.setItem('Friends', JSON.stringify(newarr));
   }
+  const handledelete = (ele) => {
+    if (!sessionStorage.getItem('Friends')) {
+      sessionStorage.setItem('Friends', JSON.stringify(data.FriendsData));
+      handlesessionStorage(ele)
+    } else {
+      handlesessionStorage(ele)
+    }
+  }
+  // const ShowComp = () => {
+  //   FriendsRef.current.style.display = "none";
+  // }
+  // useEffect(() => {
+  //   updatedData.length === 0 && ShowComp()
+  // }, [updatedData])
   return (
     <main className='Friends'>
       <h1>Friends</h1>
       <div className="wrapper">
         {
-          data.FriendsData.map((box, i) =>
+          updatedData.map((box, i) =>
           (
             <section className="friend_box position-relative" key={i}>
               <div className='contact position-absolute'>
@@ -38,7 +57,7 @@ const Friends = () => {
                 <p className='p_custom mb-0'>Joined {box.joined}</p>
                 <div className="options">
                   <Link to="/profile" className='profile custom_btn me-1'>Profile</Link>
-                  <Link to="#" className='remove custom_btn' onClick={handleClick}>Remove</Link>
+                  <Link to="#" className='remove custom_btn' onClick={() => handledelete(box)}>Remove</Link>
                 </div>
               </div>
             </section>

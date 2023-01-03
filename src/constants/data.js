@@ -119,24 +119,29 @@ const LatestNewsData = [
 const TasksData = [
   {
     name: "Record One New Video",
-    detail: "Record Python Create Exe Project"
+    detail: "Record Python Create Exe Project",
+    id: 1
   },
   {
     name: "Write Article",
-    detail: "Write Low Level vs High Level Languages"
+    detail: "Write Low Level vs High Level Languages",
+    id: 2
   },
   {
     name: "Finish Project",
-    detail: "Publish Academy Programming Project"
+    detail: "Publish Academy Programming Project",
+    id: 3
   },
   {
     name: "Attend The Meeting",
     detail: "Attend The Project Business Analysis Meeting",
+    id: 4,
     done: true
   },
   {
     name: "Finish Lesson",
-    detail: "Finish Teaching Flex Box"
+    detail: "Finish Teaching Flex Box",
+    id: 5
   },
 ]
 
@@ -566,6 +571,7 @@ const FriendsData = [
     articlesNum: 25,
     joined: "02/10/2021",
     vip: true,
+    id: 1
   },
   {
     img: images.friend2,
@@ -576,6 +582,7 @@ const FriendsData = [
     articlesNum: 12,
     joined: "02/08/2020",
     vip: false,
+    id: 2
   },
   {
     img: images.friend3,
@@ -586,6 +593,7 @@ const FriendsData = [
     articlesNum: 18,
     joined: "02/06/2020",
     vip: false,
+    id: 3
   },
   {
     img: images.friend4,
@@ -596,6 +604,7 @@ const FriendsData = [
     articlesNum: 44,
     joined: "06/08/2022",
     vip: true,
+    id: 4
   },
   {
     img: images.friend5,
@@ -606,6 +615,7 @@ const FriendsData = [
     articlesNum: 18,
     joined: "28/06/2020",
     vip: false,
+    id: 5
   },
   {
     img: images.friend2,
@@ -616,6 +626,7 @@ const FriendsData = [
     articlesNum: 20,
     joined: "28/06/2020",
     vip: false,
+    id: 6
   },
   {
     img: images.friend3,
@@ -626,6 +637,7 @@ const FriendsData = [
     articlesNum: 12,
     joined: "02/08/2020",
     vip: false,
+    id: 7
   },
   {
     img: images.friend1,
@@ -636,6 +648,7 @@ const FriendsData = [
     articlesNum: 18,
     joined: "28/08/2020",
     vip: false,
+    id: 8
   },
   {
     img: images.friend5,
@@ -646,6 +659,7 @@ const FriendsData = [
     articlesNum: 25,
     joined: "02/10/2020",
     vip: false,
+    id: 9
   },
   {
     img: images.friend4,
@@ -656,6 +670,7 @@ const FriendsData = [
     articlesNum: 14,
     joined: "02/06/2020",
     vip: true,
+    id: 10
   },
 ];
 
