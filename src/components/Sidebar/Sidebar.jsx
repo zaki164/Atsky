@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import "./Sidebar.scss";
 import { data } from "../../constants";
 
-const Sidebar = () => {
+const Sidebar = ({small}) => {
   return (
-    <aside className="sidebar position-fixed custom_shadow">
+    <aside className={`sidebar position-fixed custom_shadow ${small ? 'small' : ''}`}>
       <h4 className="title text-center position-relative fw-bold">{document.title}</h4>
       <ul className="flex-column">
       {

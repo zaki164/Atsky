@@ -4,9 +4,34 @@
   height: 100vh;
   background-color: $whiteColor;
   padding: 20px;
+  z-index: 10;
+  transition: $mainTransition;
   @include media(sm) {
     width: 58px;
     padding: 10px;
+  }
+  &.small {
+    width: 58px;
+    padding: 10px;
+    .title {
+      font-size: 14px;
+      &::before {
+        width: 40px;
+      }
+      &::after {
+        border-width: 2px;
+        width: 12px;
+        height: 12px;
+        bottom: -6px;
+      }
+    }
+    ul {
+      margin-top: 30px;
+      gap: 10px;
+      li a span {
+        display: none;
+      }
+    }
   }
   .title {
     padding-bottom: 20px;

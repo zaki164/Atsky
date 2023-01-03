@@ -1,11 +1,32 @@
 @import "../sass/helpers";
 
 .layout_content {
-    background-color: $bgColor;
-    min-height: 100vh;
-    overflow: hidden;
-    padding-left: 250px;
-    @include media(sm) {
-        padding-left: 58px;
+  background-color: $bgColor;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: 250px;
+  transition: $mainTransition;
+  &.small {
+    padding-left: 58px;
+  }
+  @include media(sm) {
+    padding-left: 58px;
+  }
+  .iconToggle {
+    top: 76px;
+    color: $blackColor;
+    background-color: $whiteColor;
+    padding: 3px 10px;
+    border-radius: 0 0 15px 0;
+    z-index: 20;
+    margin-left: -3px;
+    cursor: pointer;
+    transition: $mainTransition;
+    &:hover {
+      color: $blueColor
     }
+    @include media(sm) {
+      display: none;
+    }
+  }
 }
