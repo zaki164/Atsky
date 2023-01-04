@@ -11,6 +11,9 @@
           color: $blueColor;
           left: 50px;
           background-color: #fff;
+          @include media(sm) {
+            left: 33px;
+          }
         }
       }
     }
@@ -23,6 +26,10 @@
     transition: $mainTransition;
     cursor: pointer;
     position: relative;
+    @include media(sm) {
+      width: 50px;
+      height: 20px;
+    }
     &::before {
       font-family: "Font Awesome 5 Free";
       content: "\f00d";
@@ -39,6 +46,11 @@
       align-items: center;
       color: #aaa;
       transition: $mainTransition;
+      @include media(sm) {
+        width: 12px;
+        height: 12px;
+        font-size: 8px;
+      }
     }
   }
 }
