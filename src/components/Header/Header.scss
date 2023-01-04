@@ -32,6 +32,8 @@ header {
       transition: $mainTransition;
       border: none;
       background-color: transparent;
+      caret-color: $greyColor;
+      color: $greyColor;
       @include media(sm) {
         width: 75px;
       }
