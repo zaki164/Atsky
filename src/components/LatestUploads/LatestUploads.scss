@@ -29,7 +29,7 @@
         }
       }
       .size {
-        color: $blackColor;
+        color: $textColor;
         background-color: $color3e;
         @include media(sm) {
           font-size: 12px;

@@ -13,12 +13,16 @@
 // --greyColor: #888;
 // --color3e: #eee;
 :root {
-  --mainTheme: #fff;
-  --textColor: #000;
-  --bgColor: #f1f5f9;
-  --greyColor: #888;
-  --color3e: #eee;
+  --mainTheme: #3b3b3b;
+  --textColor: #fff;
+  --bgColor: #263340;
+  --greyColor: #999999;
+  --color3e: #666;
+  ::placeholder {
+    color: #dfdddd;
+  }
   body {
+    // #2d3640
     color: var(--textColor);
     font-family: $fontBase;
     // --mainTheme: #1a1719;
@@ -26,10 +30,18 @@
     // --bgColor: #263340;
     // --greyColor: #888;
     // &.dark {
-    // }
+      // ::placeholder {
+      //   color: #dfdddd;
+      // }
+      // }
   }
 }
 body {
+  // 3b3b3b
+  // 15161D
+  // 0f0f0
+  // 191919
+  // 262526
   // --colorBlack: #0C0C0C;
   // --colorBlack: #3b3a37;
   // --colorDark: #666;
@@ -72,14 +84,14 @@ h1 {
   }
   &::before {
     width: 145px;
-    background-color: $whiteColor;
+    background-color: $mainTheme;
     @include media(sm) {
       width: 95px;
     }
   }
   &::after {
     width: 50px;
-    background-color: $blackColor;
+    background-color: $textColor;
     @include media(sm) {
       width: 35px;
     }
@@ -101,7 +113,7 @@ h4 {
 }
 section {
   padding: 20px;
-  background-color: $whiteColor;
+  background-color: $mainTheme;
   border-radius: 8px;
   @include media(sm) {
     padding: 15px;
@@ -115,8 +127,9 @@ textarea {
   width: 100%;
   border-radius: 6px;
   border: $b13e;
-  background-color: $whiteColor;
+  background-color: $mainTheme;
   font-size: 14px;
+  caret-color: $greyColor;
   @include media(sm) {
     font-size: 13px;
   }
@@ -136,7 +149,7 @@ input[type="submit"] {
   height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background-color: $whiteColor;
+  background-color: $mainTheme;
   // border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb {
@@ -148,5 +161,5 @@ input[type="submit"] {
   }
 }
 ::-webkit-scrollbar-corner {
-  background-color: $whiteColor;
+  background-color: $mainTheme;
 }

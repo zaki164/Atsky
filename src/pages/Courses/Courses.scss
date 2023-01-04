@@ -17,7 +17,7 @@
         border-radius: 50%;
         left: 20px;
         top: 20px;
-        border: 2px solid $whiteColor;
+        border: 2px solid $mainTheme;
         @include media(sm) {
           width: 48px;
           height: 48px;

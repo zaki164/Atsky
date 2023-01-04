@@ -22,7 +22,7 @@
           transition: $mainTransition;
           &:hover {
             background-color: $blueColor;
-            color: $whiteColor;
+            color: $mainTheme;
           }
         }
       }

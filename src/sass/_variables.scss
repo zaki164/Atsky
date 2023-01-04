@@ -1,8 +1,8 @@
-$whiteColor: var(--mainTheme);
-$blackColor: var(--textColor);
+$mainTheme: var(--mainTheme);
+$textColor: var(--textColor);
 $bgColor: var(--bgColor);
 $greyColor: var(--greyColor);
-$color3e: #eee;
+$color3e: var(--color3e);
 $b13e: 1px solid $color3e;
 $b13c: 1px solid #ccc;
 $blueColor: #0075ff;

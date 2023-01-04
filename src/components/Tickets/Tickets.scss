@@ -22,7 +22,7 @@
         }
       }
       .number {
-        color: $blackColor;
+        color: $textColor;
         font-size: 25px;
         margin: 5px 0;
         @include media(sm) {

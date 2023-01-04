@@ -2,7 +2,7 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  background-color: $whiteColor;
+  background-color: $mainTheme;
   padding: 20px;
   z-index: 10;
   transition: $mainTransition;
@@ -47,7 +47,7 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
-      background-color: $blackColor;
+      background-color: $textColor;
       @include media(sm) {
         width: 40px;
       }
@@ -58,8 +58,8 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      background-color: $blackColor;
-      border: 6px solid $whiteColor;
+      background-color: $textColor;
+      border: 6px solid $mainTheme;
       transform: translateX(-50%);
       left: 50%;
       bottom: -12px;
@@ -84,7 +84,7 @@
         transition: $mainTransition;
         padding: 8px;
         border-radius: 6px;
-        color: $blackColor;
+        color: $textColor;
         &.active,
         &:hover {
           background-color: $color3e;

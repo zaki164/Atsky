@@ -24,7 +24,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-color: $whiteColor;
+      background-color: $mainTheme;
       border: 2px solid $greyColor;
       width: 18px;
       height: 18px;
@@ -44,7 +44,7 @@
       content: "\f00c";
       font-weight: 900;
       position: absolute;
-      color: $whiteColor;
+      color: $mainTheme;
       background-color: $blueColor;
       width: 18px;
       height: 18px;

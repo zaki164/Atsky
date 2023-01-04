@@ -35,7 +35,7 @@
   }
 }
 .custom_btn {
-  color: $whiteColor;
+  color: #fff;
   background-color: $blueColor;
   transition: $mainTransition;
   width: fit-content;
@@ -47,6 +47,6 @@
   }
   &:hover {
     background-color: $blueColorAlt;
-    color: $whiteColor;
+    color: $mainTheme;
   }
 }

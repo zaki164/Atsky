@@ -26,7 +26,7 @@
       }
       .content {
         .num {
-          color: $blackColor;
+          color: $textColor;
           margin: 5px 0;
           @include media(sm) {
             font-size: 13px;

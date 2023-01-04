@@ -32,8 +32,8 @@
         height: 20px;
         border-radius: 50%;
         left: -38px;
-        background-color: $whiteColor;
-        border: 2px solid $whiteColor;
+        background-color: $mainTheme;
+        border: 2px solid $mainTheme;
         outline: 2px solid $blueColor;
         z-index: 1;
         @include media(sm) {
