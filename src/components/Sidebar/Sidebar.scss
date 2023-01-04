@@ -92,6 +92,11 @@
         }
         svg {
           margin-right: 10px;
+          @each $colorName, $color in $colors {
+            &.#{$colorName} {
+              color: $color;
+            }
+          }
         }
         span {
           @include media(sm) {

@@ -13,7 +13,7 @@ const Sidebar = ({small}) => {
         (
           <li key={i}>
             <NavLink exact="true" to={`/${ele.name === "Dashboard" ? "" : ele.name}`}>
-              <FontAwesomeIcon icon={ele.icon} fixedWidth />
+              <FontAwesomeIcon icon={ele.icon} className={ele.color} fixedWidth />
               <span>{ele.name}</span>
             </NavLink>
           </li>

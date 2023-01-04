@@ -1,40 +1,48 @@
-import { faCode, faDollarSign, faUser as usersolid, faSpinner, faDiagramProject, faGear, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-import { faChartBar, faCircleUser, faCreditCard, faFile, faUser, faCircleCheck, faRectangleList, faRectangleXmark } from "@fortawesome/free-regular-svg-icons";
+import { faCode, faDollarSign, faUser, faSpinner, faDiagramProject, faGear, faGraduationCap, faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import { faChartBar, faCreditCard, faFile, faCircleCheck, faRectangleList, faRectangleXmark } from "@fortawesome/free-regular-svg-icons";
 import { faFacebookF, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { images } from "./index";
 
 const nav = [
   {
     name: "Dashboard",
-    icon: faChartBar
+    icon: faChartBar,
+    color: "red"
   },
   {
     name: "Settings",
-    icon: faGear
+    icon: faGear,
+    color: "green"
   },
   {
     name: "Profile",
-    icon: faUser
+    icon: faUser,
+    color: "orange"
   },
   {
     name: "Projects",
-    icon: faDiagramProject
+    icon: faDiagramProject,
+    color: "blue"
   },
   {
     name: "Courses",
-    icon: faGraduationCap
+    icon: faGraduationCap,
+    color: "orange"
   },
   {
     name: "Friends",
-    icon: faCircleUser
+    icon: faUserGroup,
+    color: "red"
   },
   {
     name: "Files",
-    icon: faFile
+    icon: faFile,
+    color: "blue"
   },
   {
     name: "Plans",
-    icon: faCreditCard
+    icon: faCreditCard,
+    color: "green"
   },
 ];
 
@@ -54,7 +62,7 @@ const yearlyData = [
     color: "orange"
   },
   {
-    icon: usersolid,
+    icon: faUser,
     name: "Team",
     number: "12",
     Per: "75%",
