@@ -3,10 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { data } from '../../constants'
 import "./Courses.scss";
-import AOS from 'aos';
-AOS.init({
-  once: true,
-});
 
 const Courses = () => {
   return (

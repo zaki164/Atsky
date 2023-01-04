@@ -4,11 +4,11 @@ import "./Settings.scss";
 
 const Settings = () => {
   const wrapperRef = useRef();
-  useEffect(() => {
-    [...wrapperRef.current.children].forEach(ele => {
-      ele.setAttribute('data-aos', "fade-up")
-    })
-  }, [])
+  // useEffect(() => {
+  //   [...wrapperRef.current.children].forEach(ele => {
+  //     ele.setAttribute('data-aos', "fade-up")
+  //   })
+  // }, [])
   return (
     <main className='Setting'>
       <h1>Settings</h1>

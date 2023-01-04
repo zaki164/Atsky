@@ -19,7 +19,7 @@
       svg {
         font-size: 18px;
         padding: 13px;
-        color: $greyColor;
+        color: #555;
         border-right: 1px solid #ddd;
         transition: $mainTransition;
         @include media(sm) {
@@ -29,6 +29,10 @@
       input {
         background-color: transparent;
         border: none;
+        color: #555;
+        &::placeholder {
+          color: #555;
+        }
       }
     }
   }

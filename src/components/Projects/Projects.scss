@@ -38,7 +38,6 @@
               @include imgsProfile;
             }
             .status {
-              color: $mainTheme;
               &.Pending {
                 background-color: $orangeColor;
               }

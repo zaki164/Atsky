@@ -16,10 +16,18 @@
   --mainTheme: #3b3b3b;
   --textColor: #fff;
   --bgColor: #263340;
-  --greyColor: #999999;
+  --greyColor: #c0bdbd;
   --color3e: #666;
+
+  // --mainTheme: #fff;
+  // --textColor: #000;
+  // --bgColor: #f1f5f9;
+  // --greyColor: #888;
+  // --color3e: #eee;
+  
   ::placeholder {
-    color: #dfdddd;
+    color: $greyColor; //white
+    color: #dfdddd; //black
   }
   body {
     // #2d3640
@@ -33,7 +41,18 @@
       // ::placeholder {
       //   color: #dfdddd;
       // }
-      // }
+      .toggle_label {
+        .toggle_checkbox {
+          &:checked {
+            + .toggle_switch {
+              &::before {
+                background-color: #fff;
+              }
+            }
+          }
+        }
+      }
+    // }
   }
 }
 body {
@@ -130,6 +149,7 @@ textarea {
   background-color: $mainTheme;
   font-size: 14px;
   caret-color: $greyColor;
+  color: $greyColor;
   @include media(sm) {
     font-size: 13px;
   }

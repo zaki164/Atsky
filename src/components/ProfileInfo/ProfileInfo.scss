@@ -40,7 +40,7 @@
         align-items: center;
       }
       &:hover {
-        background-color: #f9f9f9;
+        background-color: $bgColor;
       }
       &:not(:last-child) {
         border-bottom: $b13e;
