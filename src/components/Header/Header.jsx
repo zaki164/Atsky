@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faLightbulb } from '@fortawesome/free-regular-svg-icons';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { images } from '../../constants';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import { useRef, useEffect, useState, useLayoutEffect } from 'react';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [light, setlight] = useState(false);
