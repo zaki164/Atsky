@@ -1,0 +1,11 @@
+@import '../../sass/helpers';
+
+.compLoader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $blueColor;
+  font-size: 60px;
+  color: $orangeColor;
+}

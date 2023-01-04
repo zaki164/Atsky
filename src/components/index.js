@@ -26,6 +26,7 @@ import Widgets from './Widgets/Widgets';
 import CustomCheckBox from './custom/CustomCheckBox/CustomCheckBox';
 import CustomRadio from './custom/CustomRadio/CustomRadio';
 import BackupManager from './BackupManager/BackupManager';
+import CompLoader from './CompLoader/CompLoader';
 
 
 export {
@@ -57,4 +58,5 @@ export {
   CustomCheckBox,
   CustomRadio,
   BackupManager,
+  CompLoader,
 };
