@@ -24,7 +24,7 @@
         }
       }
       .header {
-          color: $mainTheme;
+          color: #fff;
           border: 3px solid $mainTheme;
           padding: 25px;
           @include media(sm) {

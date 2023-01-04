@@ -13,16 +13,16 @@
         }
         svg {
           background-color: $color3e;
+          color: #666;
           padding: 10px;
           border-radius: 50%;
           font-size: 13px;
           font-weight: bold;
-          color: #666;
           cursor: pointer;
           transition: $mainTransition;
           &:hover {
             background-color: $blueColor;
-            color: $mainTheme;
+            color: #fff;
           }
         }
       }
@@ -68,6 +68,9 @@
         .options {
           .remove {
             background-color: $redColor;
+            &:hover {
+              background-color: rgba($redColor, .7);
+            }
           }
         }
       }

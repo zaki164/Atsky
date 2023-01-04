@@ -37,10 +37,10 @@
     // --textColor: #fff;
     // --bgColor: #263340;
     // --greyColor: #888;
-    // &.dark {
-      // ::placeholder {
-      //   color: #dfdddd;
-      // }
+    &.dark {
+      ::placeholder {
+        color: #dfdddd;
+      }
       .toggle_label {
         .toggle_checkbox {
           &:checked {
@@ -52,7 +52,24 @@
           }
         }
       }
-    // }
+      .Friends {
+        .wrapper {
+          .friend_box {
+            .contact {
+              svg {
+                color: $greyColor;
+              }
+            }
+          }
+        }
+      }
+      .custom_shadow {
+        box-shadow: 0 0 10px #111;
+      }
+      .icon_shadow {
+        box-shadow: 5px 5px 5px #111;
+      }
+    }
   }
 }
 body {

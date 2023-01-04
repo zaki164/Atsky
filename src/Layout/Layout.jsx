@@ -17,7 +17,7 @@ const Layout = () => {
     <>
       <Sidebar small={small} />
       <div className="layout_content position-relative" ref={layoutRef}>
-        <span className="iconToggle position-absolute" onClick={handleSizeSideBar}>
+        <span className="iconToggle position-absolute icon_shadow" onClick={handleSizeSideBar}>
           <FontAwesomeIcon icon={faRightLeft} />
         </span>
         <Header />
