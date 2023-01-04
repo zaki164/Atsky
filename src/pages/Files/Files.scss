@@ -29,7 +29,7 @@
         .head {
           padding: 10px 0;
           @include media(sm) {
-            padding: 5px 0 0;
+            padding: 5px 0 3px;
           }
           img {
             width: 64px;
