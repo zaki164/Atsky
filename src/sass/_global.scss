@@ -7,46 +7,32 @@
 *:focus {
   outline: none;
 }
-// --mainTheme: #fff;
-// --textColor: #000;
-// --bgColor: #f1f5f9;
-// --greyColor: #888;
-// --color3e: #eee;
 :root {
+  // Dark Theme (default)
   --mainTheme: #3b3b3b;
   --textColor: #fff;
   --bgColor: #263340;
   --greyColor: #c0bdbd;
   --color3e: #666;
-
-  // --mainTheme: #fff;
-  // --textColor: #000;
-  // --bgColor: #f1f5f9;
-  // --greyColor: #888;
-  // --color3e: #eee;
-  
-  ::placeholder {
-    color: $greyColor; //white
-    color: #dfdddd; //black
-  }
   body {
-    // #2d3640
     color: var(--textColor);
     font-family: $fontBase;
-    // --mainTheme: #1a1719;
-    // --textColor: #fff;
-    // --bgColor: #263340;
-    // --greyColor: #888;
-    &.dark {
+    // Light Theme
+    &.light {
+      --mainTheme: #fff;
+      --textColor: #000;
+      --bgColor: #f1f5f9;
+      --greyColor: #888;
+      --color3e: #eee;
       ::placeholder {
-        color: #dfdddd;
+        color: $greyColor;
       }
       .toggle_label {
         .toggle_checkbox {
           &:checked {
             + .toggle_switch {
               &::before {
-                background-color: #fff;
+                background-color: $mainTheme
               }
             }
           }
@@ -57,39 +43,23 @@
           .friend_box {
             .contact {
               svg {
-                color: $greyColor;
+                color: #666;
               }
             }
           }
         }
       }
       .custom_shadow {
-        box-shadow: 0 0 10px #111;
+        box-shadow: 0 0 10px #ddd;
       }
       .icon_shadow {
-        box-shadow: 5px 5px 5px #111;
+        box-shadow: 5px 5px 5px #ddd;
       }
       section {
-        box-shadow: 2px 2px 7px #222;
+        box-shadow: 2px 2px 7px #ddd;
       }
     }
   }
-}
-body {
-  // 3b3b3b
-  // 15161D
-  // 0f0f0
-  // 191919
-  // 262526
-  // --colorBlack: #0C0C0C;
-  // --colorBlack: #3b3a37;
-  // --colorDark: #666;
-  // --bgDark: #222;
-  // --bgDark2: #15161D;
-  // --bg-dark3: #171613;
-  // --bg-dark4: #121212;
-  // --bg-dark5: #181818;
-  // --bgColor: #1a1719;
 }
 a {
   text-decoration: none;
@@ -180,6 +150,7 @@ input[type="submit"] {
 }
 ::placeholder {
   transition: $mainTransition;
+  color: #dfdddd;
 }
 ::selection {
   background-color: $color3e;
