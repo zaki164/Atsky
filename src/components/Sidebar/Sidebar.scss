@@ -5,12 +5,12 @@
   background-color: $mainTheme;
   padding: 20px;
   z-index: 10;
-  transition: $mainTransition;
   @include media(sm) {
     width: 58px;
     padding: 10px;
   }
-  &.small {
+  &.smallSize {
+    transition: $mainTransition;
     width: 58px;
     padding: 10px;
     .title {

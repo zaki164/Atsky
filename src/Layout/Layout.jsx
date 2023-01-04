@@ -11,7 +11,7 @@ const Layout = () => {
   const layoutRef = useRef();
   const handleSizeSideBar = () => {
     setsmall(!small)
-    layoutRef.current.classList.toggle('small');
+    layoutRef.current.classList.toggle('smallSize');
   }
   return (
     <>

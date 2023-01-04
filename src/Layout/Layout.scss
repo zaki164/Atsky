@@ -5,8 +5,8 @@
   min-height: 100vh;
   overflow: hidden;
   padding-left: 250px;
-  transition: $mainTransition;
-  &.small {
+  &.smallSize {
+    transition: $mainTransition;
     padding-left: 58px;
   }
   @include media(sm) {

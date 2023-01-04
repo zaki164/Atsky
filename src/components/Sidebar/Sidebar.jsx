@@ -5,7 +5,7 @@ import { data } from "../../constants";
 
 const Sidebar = ({small}) => {
   return (
-    <aside className={`sidebar position-fixed custom_shadow ${small ? 'small' : ''}`}>
+    <aside className={`sidebar position-fixed custom_shadow ${small ? 'smallSize' : ''}`}>
       <h4 className="title text-center position-relative fw-bold">{document.title}</h4>
       <ul className="flex-column">
       {
