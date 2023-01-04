@@ -70,7 +70,7 @@
         box-shadow: 5px 5px 5px #111;
       }
       section {
-        box-shadow: 2px 2px 7px #111;
+        box-shadow: 2px 2px 7px #222;
       }
     }
   }
@@ -154,7 +154,7 @@ section {
   padding: 20px;
   background-color: $mainTheme;
   border-radius: 8px;
-  box-shadow: 2px 2px 7px #111;
+  box-shadow: 2px 2px 7px #222;
   @include media(sm) {
     padding: 15px;
   }
@@ -191,11 +191,9 @@ input[type="submit"] {
 }
 ::-webkit-scrollbar-track {
   background-color: $mainTheme;
-  // border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: $blueColor;
-  // border-radius: 15px;
   transition: $mainTransition;
   &:hover {
     background-color: $blueColorAlt;

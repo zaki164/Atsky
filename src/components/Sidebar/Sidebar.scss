@@ -88,6 +88,7 @@
         &.active,
         &:hover {
           background-color: $color3e;
+          box-shadow: 2px 2px 7px var(--color3e);
         }
         svg {
           margin-right: 10px;
