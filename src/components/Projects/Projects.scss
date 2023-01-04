@@ -9,12 +9,13 @@
     }
     @include media(sm) {
       margin-top: 15px;
-      font-size: 14px;
+      font-size: 13px;
     }
     table {
       min-width: 1000px;
       thead {
         tr {
+          border: $b13e;
           background-color: $color3e;
           td {
             font-weight: bold;
