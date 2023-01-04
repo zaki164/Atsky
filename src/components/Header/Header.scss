@@ -52,14 +52,25 @@ header {
     .themeIcon,
     .notification {
       margin-right: 20px;
+      cursor: pointer;
       @include media(sm) {
         margin-right: 13px;
       } 
-      cursor: pointer;
       svg {
         font-size: 30px;
         @include media(sm) {
           font-size: 20px;
+        }
+      }
+    }
+    .themeIcon {
+      svg {
+        transition: color 2s;
+        &.moon {
+          color: #3aa8c2;
+        }
+        &.sun {
+          color: #FFE87C;
         }
       }
     }

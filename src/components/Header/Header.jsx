@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faLightbulb, faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faBell, faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import { images } from '../../constants';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import { useRef, useEffect, useState, useLayoutEffect } from 'react';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [light, setlight] = useState(false);
@@ -12,17 +13,16 @@ const Header = () => {
   const stopPropa = e => {
     e.stopPropagation();
   }
+  const viewNotify = (e) => {
+    stopPropa(e);
+    notify.current.nextSibling.classList.toggle("show");
+  }
   const handleDarkMode = (e) => {
     stopPropa(e);
     setlight(!light);
     document.body.classList.toggle('light');
     localStorage.setItem("Light Mode", !light);
   }
-  const viewNotify = (e) => {
-    stopPropa(e);
-    notify.current.nextSibling.classList.toggle("show");
-  }
-  // localStorage.clear();
   useLayoutEffect(() => {
     if (lightlocal) {
       if (lightlocal === "true") {
@@ -47,7 +47,7 @@ const Header = () => {
         <input type="search" placeholder='Type A Keyword' />
       </div>
       <div className='icons position-relative flex_center'>
-        <span className='themeIcon' onClick={handleDarkMode}>{light ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faLightbulb} />}</span>
+        <span className='themeIcon' onClick={handleDarkMode}>{light ? <FontAwesomeIcon icon={faMoon} className="moon"/> : <FontAwesomeIcon icon={faLightbulb} className="sun"/>}</span>
         <span className='notification' ref={notify} onClick={viewNotify}>
           <FontAwesomeIcon icon={faBell} />
         </span>
