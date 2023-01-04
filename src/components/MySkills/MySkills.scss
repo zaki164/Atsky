@@ -3,6 +3,9 @@
 .MySkills {
   flex: 1;
   ul {
+    @include media(sm) {
+      align-items: center;
+    }
     li {
       padding: 20px 0;
       gap: 8px;
