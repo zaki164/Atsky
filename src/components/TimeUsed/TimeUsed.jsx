@@ -1,6 +1,5 @@
 import { data } from '../../constants';
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Line } from 'recharts';
-import './TimeUsed.scss';
 
 const TimeUsed = () => {
   return (
