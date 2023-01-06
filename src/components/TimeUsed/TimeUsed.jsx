@@ -1,37 +1,6 @@
-// import { data } from '../../constants'
+import { data } from '../../constants';
 import { ResponsiveContainer, LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Line } from 'recharts';
 import './TimeUsed.scss';
-
-const TimeUseddata = [
-  {
-    Day: 'Fri',
-    Hours: 4,
-  },
-  {
-    Day: 'Sat',
-    Hours: 1,
-  },
-  {
-    Day: 'Sun',
-    Hours: 8,
-  },
-  {
-    Day: 'Mon',
-    Hours: 3,
-  },
-  {
-    Day: 'Tue',
-    Hours: 5,
-  },
-  {
-    Day: 'Wed',
-    Hours: 2.5,
-  },
-  {
-    Day: 'Thu',
-    Hours: 4,
-  },
-];
 
 const TimeUsed = () => {
   return (
@@ -42,12 +11,12 @@ const TimeUsed = () => {
           <LineChart
             width={300}
             height={100}
-            data={TimeUseddata}
+            data={data.TimeUsedData}
             margin={{
-              top: 55,
-              right: 10,
+              top: 5,
+              right: 15,
               left: -40,
-              bottom: 55,
+              bottom: 5,
             }}
           >
             <CartesianGrid strokeDasharray="3 3"/>

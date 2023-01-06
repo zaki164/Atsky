@@ -914,6 +914,37 @@ const PlatformsData = [
   },
 ];
 
+const TimeUsedData = [
+  {
+    Day: 'Fri',
+    Hours: 4,
+  },
+  {
+    Day: 'Sat',
+    Hours: 1,
+  },
+  {
+    Day: 'Sun',
+    Hours: 8,
+  },
+  {
+    Day: 'Mon',
+    Hours: 3,
+  },
+  {
+    Day: 'Tue',
+    Hours: 5,
+  },
+  {
+    Day: 'Wed',
+    Hours: 2.5,
+  },
+  {
+    Day: 'Thu',
+    Hours: 4,
+  },
+];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -936,6 +967,7 @@ const data = {
   FilesData,
   PlansData,
   PlatformsData,
+  TimeUsedData,
 }
 
 export default data
