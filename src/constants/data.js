@@ -945,6 +945,44 @@ const TimeUsedData = [
   },
 ];
 
+const FollowersData = [
+  {
+    Month: 'Jan',
+    Followers: 2400,
+    amt: 2400,
+  },
+  {
+    Month: 'Mar',
+    Followers: 1398,
+    amt: 2210,
+  },
+  {
+    Month: 'May',
+    Followers: 9800,
+    amt: 2290,
+  },
+  {
+    Month: 'Jul',
+    Followers: 3908,
+    amt: 2000,
+  },
+  {
+    Month: 'Sep',
+    Followers: 4800,
+    amt: 2181,
+  },
+  {
+    Month: 'Nov',
+    Followers: 3800,
+    amt: 2500,
+  },
+  {
+    Month: 'Dec',
+    Followers: 4300,
+    amt: 2100,
+  },
+];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -968,6 +1006,7 @@ const data = {
   PlansData,
   PlatformsData,
   TimeUsedData,
+  FollowersData,
 }
 
 export default data

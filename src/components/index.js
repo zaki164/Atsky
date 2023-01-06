@@ -29,6 +29,7 @@ import BackupManager from './BackupManager/BackupManager';
 import CompLoader from './CompLoader/CompLoader';
 import Platforms from './Platforms/Platforms';
 import TimeUsed from './TimeUsed/TimeUsed';
+import Followers from './Followers/Followers';
 
 
 export {
@@ -63,4 +64,5 @@ export {
   CompLoader,
   Platforms,
   TimeUsed,
+  Followers,
 };
