@@ -28,6 +28,7 @@ import CustomRadio from './custom/CustomRadio/CustomRadio';
 import BackupManager from './BackupManager/BackupManager';
 import CompLoader from './CompLoader/CompLoader';
 import Platforms from './Platforms/Platforms';
+import TimeUsed from './TimeUsed/TimeUsed';
 
 
 export {
@@ -61,4 +62,5 @@ export {
   BackupManager,
   CompLoader,
   Platforms,
+  TimeUsed,
 };
