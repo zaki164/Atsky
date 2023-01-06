@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Atsky/static/css/main.9d322e9c.css",
-    "main.js": "/Atsky/static/js/main.b6699e8d.js",
+    "main.css": "/Atsky/static/css/main.f70c02aa.css",
+    "main.js": "/Atsky/static/js/main.5ea80a3a.js",
     "static/css/417.161bdbd4.chunk.css": "/Atsky/static/css/417.161bdbd4.chunk.css",
     "static/js/417.9249bdef.chunk.js": "/Atsky/static/js/417.9249bdef.chunk.js",
     "static/css/391.2db3bfe2.chunk.css": "/Atsky/static/css/391.2db3bfe2.chunk.css",
-    "static/js/391.f55d045d.chunk.js": "/Atsky/static/js/391.f55d045d.chunk.js",
+    "static/js/391.88b3f93f.chunk.js": "/Atsky/static/js/391.88b3f93f.chunk.js",
     "static/css/560.9323a940.chunk.css": "/Atsky/static/css/560.9323a940.chunk.css",
     "static/js/560.53a16e60.chunk.js": "/Atsky/static/js/560.53a16e60.chunk.js",
     "static/css/455.2d05fbd1.chunk.css": "/Atsky/static/css/455.2d05fbd1.chunk.css",
@@ -13,11 +13,11 @@
     "static/css/962.209c3b21.chunk.css": "/Atsky/static/css/962.209c3b21.chunk.css",
     "static/js/962.cfb041a8.chunk.js": "/Atsky/static/js/962.cfb041a8.chunk.js",
     "static/css/889.b28e6e0c.chunk.css": "/Atsky/static/css/889.b28e6e0c.chunk.css",
-    "static/js/889.b9588bd3.chunk.js": "/Atsky/static/js/889.b9588bd3.chunk.js",
+    "static/js/889.2a5aa9b1.chunk.js": "/Atsky/static/js/889.2a5aa9b1.chunk.js",
     "static/css/432.dcf5770d.chunk.css": "/Atsky/static/css/432.dcf5770d.chunk.css",
-    "static/js/432.3e60ea0c.chunk.js": "/Atsky/static/js/432.3e60ea0c.chunk.js",
+    "static/js/432.eb796318.chunk.js": "/Atsky/static/js/432.eb796318.chunk.js",
     "static/css/820.2b89b974.chunk.css": "/Atsky/static/css/820.2b89b974.chunk.css",
-    "static/js/820.5a06e26e.chunk.js": "/Atsky/static/js/820.5a06e26e.chunk.js",
+    "static/js/820.84795a18.chunk.js": "/Atsky/static/js/820.84795a18.chunk.js",
     "static/media/news-04.png": "/Atsky/static/media/news-04.a02aff23df72ac1dcc1f.png",
     "static/media/news-02.png": "/Atsky/static/media/news-02.c015f313cf6cf401ac2c.png",
     "static/media/activity-03.png": "/Atsky/static/media/activity-03.d98be99005d485661a2a.png",
@@ -43,12 +43,12 @@
     "static/media/avi.svg": "/Atsky/static/media/avi.b31b126e336512377f7656922ebe7357.svg",
     "static/media/dll.svg": "/Atsky/static/media/dll.7db3001414bd4da8d79264121905145f.svg",
     "index.html": "/Atsky/index.html",
-    "main.9d322e9c.css.map": "/Atsky/static/css/main.9d322e9c.css.map",
-    "main.b6699e8d.js.map": "/Atsky/static/js/main.b6699e8d.js.map",
+    "main.f70c02aa.css.map": "/Atsky/static/css/main.f70c02aa.css.map",
+    "main.5ea80a3a.js.map": "/Atsky/static/js/main.5ea80a3a.js.map",
     "417.161bdbd4.chunk.css.map": "/Atsky/static/css/417.161bdbd4.chunk.css.map",
     "417.9249bdef.chunk.js.map": "/Atsky/static/js/417.9249bdef.chunk.js.map",
     "391.2db3bfe2.chunk.css.map": "/Atsky/static/css/391.2db3bfe2.chunk.css.map",
-    "391.f55d045d.chunk.js.map": "/Atsky/static/js/391.f55d045d.chunk.js.map",
+    "391.88b3f93f.chunk.js.map": "/Atsky/static/js/391.88b3f93f.chunk.js.map",
     "560.9323a940.chunk.css.map": "/Atsky/static/css/560.9323a940.chunk.css.map",
     "560.53a16e60.chunk.js.map": "/Atsky/static/js/560.53a16e60.chunk.js.map",
     "455.2d05fbd1.chunk.css.map": "/Atsky/static/css/455.2d05fbd1.chunk.css.map",
@@ -56,14 +56,14 @@
     "962.209c3b21.chunk.css.map": "/Atsky/static/css/962.209c3b21.chunk.css.map",
     "962.cfb041a8.chunk.js.map": "/Atsky/static/js/962.cfb041a8.chunk.js.map",
     "889.b28e6e0c.chunk.css.map": "/Atsky/static/css/889.b28e6e0c.chunk.css.map",
-    "889.b9588bd3.chunk.js.map": "/Atsky/static/js/889.b9588bd3.chunk.js.map",
+    "889.2a5aa9b1.chunk.js.map": "/Atsky/static/js/889.2a5aa9b1.chunk.js.map",
     "432.dcf5770d.chunk.css.map": "/Atsky/static/css/432.dcf5770d.chunk.css.map",
-    "432.3e60ea0c.chunk.js.map": "/Atsky/static/js/432.3e60ea0c.chunk.js.map",
+    "432.eb796318.chunk.js.map": "/Atsky/static/js/432.eb796318.chunk.js.map",
     "820.2b89b974.chunk.css.map": "/Atsky/static/css/820.2b89b974.chunk.css.map",
-    "820.5a06e26e.chunk.js.map": "/Atsky/static/js/820.5a06e26e.chunk.js.map"
+    "820.84795a18.chunk.js.map": "/Atsky/static/js/820.84795a18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d322e9c.css",
-    "static/js/main.b6699e8d.js"
+    "static/css/main.f70c02aa.css",
+    "static/js/main.5ea80a3a.js"
   ]
 }
