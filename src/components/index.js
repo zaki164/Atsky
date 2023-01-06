@@ -27,6 +27,7 @@ import CustomCheckBox from './custom/CustomCheckBox/CustomCheckBox';
 import CustomRadio from './custom/CustomRadio/CustomRadio';
 import BackupManager from './BackupManager/BackupManager';
 import CompLoader from './CompLoader/CompLoader';
+import Platforms from './Platforms/Platforms';
 
 
 export {
@@ -59,4 +60,5 @@ export {
   CustomRadio,
   BackupManager,
   CompLoader,
+  Platforms,
 };

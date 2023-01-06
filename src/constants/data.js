@@ -249,25 +249,25 @@ const Reminders = [
 const SocialMedia = [
   {
     platform: "Twitter",
-    followers: "90K Followers",
+    Platforms: "90K Platforms",
     subscribe: "Follow",
     icon: faTwitter
   },
   {
     platform: "Facebook",
-    followers: "2M Like",
+    Platforms: "2M Like",
     subscribe: "Like",
     icon: faFacebookF
   },
   {
     platform: "Youtube",
-    followers: "1M Subs",
+    Platforms: "1M Subs",
     subscribe: "Subscribe",
     icon: faYoutube
   },
   {
     platform: "Linkedin",
-    followers: "70K Followers",
+    Platforms: "70K Platforms",
     subscribe: "Follow",
     icon: faLinkedin
   }
@@ -887,6 +887,33 @@ const PlansData = [
   },
 ];
 
+const PlatformsData = [
+  {
+    platform: 'Facebook',
+    A: 120,
+  },
+  {
+    platform: 'Youtube',
+    A: 110,
+  },
+  {
+    platform: 'TikTok',
+    A: 86,
+  },
+  {
+    platform: 'WhatsApp',
+    A: 99,
+  },
+  {
+    platform: 'Twitter',
+    A: 85,
+  },
+  {
+    platform: 'Instagram',
+    A: 65,
+  },
+];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -908,6 +935,7 @@ const data = {
   FriendsData,
   FilesData,
   PlansData,
+  PlatformsData,
 }
 
 export default data

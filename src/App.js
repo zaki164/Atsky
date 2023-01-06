@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import './sass/App.scss';
 import Layout from "./Layout/Layout";
 import { HashRouter as Router } from "react-router-dom";

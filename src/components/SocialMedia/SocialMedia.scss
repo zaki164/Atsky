@@ -23,7 +23,7 @@
           font-size: 20px;
         }
       }
-      .followers {
+      .Platforms {
         padding: 10px 20px;
         @include media(sm) {
           padding: 4px 10px;
@@ -44,7 +44,7 @@
           .icon {
             background-color: $color;
           }
-          .followers {
+          .Platforms {
             background-color: rgba($color, .2);
             span {
               color: $color;

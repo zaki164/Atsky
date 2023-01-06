@@ -15,8 +15,8 @@ const SocialMedia = () => {
                 <div className='icon flex_center'>
                   <FontAwesomeIcon icon={ele.icon} />
                 </div>
-                <div className="followers flex-grow-1 flex_between">
-                  <span>{ele.followers}</span>
+                <div className="Platforms flex-grow-1 flex_between">
+                  <span>{ele.Platforms}</span>
                   <Link to='/Profile' className='custom_btn'>{ele.subscribe}</Link>
                 </div>
               </li>
