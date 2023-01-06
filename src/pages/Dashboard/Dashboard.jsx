@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
-import { Platforms, LastProjectProgress, LatestNews, LatestPost, LatestUploads, Projects, QuickDraft, Reminders, SearchItems, SocialMedia, Tasks, Tickets, Welcome, YearlyTargets, TimeUsed, Followers } from "../../components";
+import { Platforms, LastProjectProgress, LatestNews, LatestPost, LatestUploads, Projects, QuickDraft, Reminders, SearchItems, SocialMedia, Tasks, Tickets, Welcome, YearlyTargets, TimeUsed, Followers, Views } from "../../components";
 import "./Dashboard.scss";
 
 const Dashboard = () => {
@@ -18,16 +18,17 @@ const Dashboard = () => {
       <div className="wrapper" ref={wrapperRef}>
         <Welcome />
         {widgetsDataReducer["Quick Draft"] && <QuickDraft />}
-        <Followers />
         <Platforms />
-        <TimeUsed />
         {widgetsDataReducer["Yearly Targets"] && <YearlyTargets />}
+        <LastProjectProgress />
+        <Views />
         {widgetsDataReducer["Tickets Statistics"] && <Tickets />}
+        <Followers />
         {widgetsDataReducer["Latest News"] && <LatestNews />}
         {widgetsDataReducer["Latest Tasks"] && <Tasks />}
         {widgetsDataReducer["Top Search Items"] && <SearchItems />}
         <LatestUploads />
-        <LastProjectProgress />
+        <TimeUsed />
         <Reminders />
         <LatestPost />
         <SocialMedia />

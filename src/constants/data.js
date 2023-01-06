@@ -104,12 +104,12 @@ const LatestNewsData = [
     details: "New SASS Examples & Tutorials",
     date: "3 Days Ago"
   },
-  {
-    img: images.news2,
-    title: "Changed The Design",
-    details: "A Brand New Website Design",
-    date: "5 Days Ago"
-  },
+  // {
+  //   img: images.news2,
+  //   title: "Changed The Design",
+  //   details: "A Brand New Website Design",
+  //   date: "5 Days Ago"
+  // },
   {
     img: images.news3,
     title: "Team Increased",
@@ -983,6 +983,37 @@ const FollowersData = [
   },
 ];
 
+const ViewsData = [
+  {
+    Month: 'Jan',
+    Views: 14400,
+  },
+  {
+    Month: 'Mar',
+    Views: 11368,
+  },
+  {
+    Month: 'May',
+    Views: 21800,
+  },
+  {
+    Month: 'Jul',
+    Views: 8908,
+  },
+  {
+    Month: 'Sep',
+    Views: 13200,
+  },
+  {
+    Month: 'Nov',
+    Views: 10777,
+  },
+  {
+    Month: 'Dec',
+    Views: 20444,
+  },
+];
+
 const data = {
   nav,
   LatestUploadsData,
@@ -1007,6 +1038,7 @@ const data = {
   PlatformsData,
   TimeUsedData,
   FollowersData,
+  ViewsData,
 }
 
 export default data

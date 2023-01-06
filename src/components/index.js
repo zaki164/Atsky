@@ -30,6 +30,7 @@ import CompLoader from './CompLoader/CompLoader';
 import Platforms from './Platforms/Platforms';
 import TimeUsed from './TimeUsed/TimeUsed';
 import Followers from './Followers/Followers';
+import Views from './Views/Views';
 
 
 export {
@@ -65,4 +66,5 @@ export {
   Platforms,
   TimeUsed,
   Followers,
+  Views,
 };
