@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Atsky/static/css/main.f70c02aa.css",
-    "main.js": "/Atsky/static/js/main.5ea80a3a.js",
+    "main.css": "/Atsky/static/css/main.be1be4e3.css",
+    "main.js": "/Atsky/static/js/main.9de2c6c8.js",
     "static/css/417.161bdbd4.chunk.css": "/Atsky/static/css/417.161bdbd4.chunk.css",
     "static/js/417.9249bdef.chunk.js": "/Atsky/static/js/417.9249bdef.chunk.js",
     "static/css/391.2db3bfe2.chunk.css": "/Atsky/static/css/391.2db3bfe2.chunk.css",
@@ -43,8 +43,8 @@
     "static/media/avi.svg": "/Atsky/static/media/avi.b31b126e336512377f7656922ebe7357.svg",
     "static/media/dll.svg": "/Atsky/static/media/dll.7db3001414bd4da8d79264121905145f.svg",
     "index.html": "/Atsky/index.html",
-    "main.f70c02aa.css.map": "/Atsky/static/css/main.f70c02aa.css.map",
-    "main.5ea80a3a.js.map": "/Atsky/static/js/main.5ea80a3a.js.map",
+    "main.be1be4e3.css.map": "/Atsky/static/css/main.be1be4e3.css.map",
+    "main.9de2c6c8.js.map": "/Atsky/static/js/main.9de2c6c8.js.map",
     "417.161bdbd4.chunk.css.map": "/Atsky/static/css/417.161bdbd4.chunk.css.map",
     "417.9249bdef.chunk.js.map": "/Atsky/static/js/417.9249bdef.chunk.js.map",
     "391.2db3bfe2.chunk.css.map": "/Atsky/static/css/391.2db3bfe2.chunk.css.map",
@@ -63,7 +63,7 @@
     "820.84795a18.chunk.js.map": "/Atsky/static/js/820.84795a18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f70c02aa.css",
-    "static/js/main.5ea80a3a.js"
+    "static/css/main.be1be4e3.css",
+    "static/js/main.9de2c6c8.js"
   ]
 }
